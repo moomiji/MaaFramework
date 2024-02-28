@@ -261,56 +261,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>function<sp/>exported<sp/>symbols</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>_WIN32<sp/>||<sp/>defined<sp/>__CYGWIN__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_IMPORT<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_EXPORT<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_LOCAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__GNUC__<sp/>&gt;=<sp/>4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_IMPORT<sp/>__attribute__((visibility(&quot;default&quot;</highlight><highlight class="normal">)))</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_EXPORT<sp/>__attribute__((visibility(&quot;default&quot;</highlight><highlight class="normal">)))</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_LOCAL<sp/>__attribute__((visibility(&quot;hidden&quot;</highlight><highlight class="normal">)))</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="MaaPort_8h_1aed0af92192d8a7f6278afec3adfee80c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="MaaPort_8h_1a20cf214e76a3bf5d041786154513c892" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="MaaPort_8h_1a4be2819e9ef99d9befeefb94fa2afada" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_DLL_LOCAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAA_FRAMEWORK_EXPORTS<sp/></highlight><highlight class="comment">//<sp/>defined<sp/>if<sp/>we<sp/>are<sp/>building<sp/>the<sp/>DLL<sp/>(instead<sp/>of<sp/>using<sp/>it)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_FRAMEWORK_API<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_FRAMEWORK_API<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MAA_FRAMEWORK_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAA_CONTROL_UNIT_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_CONTROL_UNIT_API<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="MaaPort_8h_1a826aa33333d0528e8a238f2717265249" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_CONTROL_UNIT_API<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAA_UTILS_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_UTILS_API<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="MaaPort_8h_1aabeb9919a6a22899b3e2e224c83e90db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_UTILS_API<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAA_TOOLKIT_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_TOOLKIT_API<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_TOOLKIT_API<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAA_RPC_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_RPC_API<sp/>MAA_DLL_EXPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="MaaPort_8h_1a7c19101f6ca5fe6c8f217aa09a3f2863" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAA_RPC_API<sp/>MAA_DLL_IMPORT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-    </programlisting>
     <location file="include/MaaFramework/MaaPort.h"/>
   </compounddef>
 </doxygen>

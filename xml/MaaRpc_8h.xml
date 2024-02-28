@@ -75,24 +75,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaDef_8h" kindref="compound">MaaFramework/MaaDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="MaaRpc_8h_1a9a194891a64fd33059bc96e7f18d7f6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a7c19101f6ca5fe6c8f217aa09a3f2863" kindref="member">MAA_RPC_API</ref><sp/><ref refid="MaaRpc_8h_1a9a194891a64fd33059bc96e7f18d7f6a" kindref="member">MaaRpcStart</ref>(<ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>address);</highlight></codeline>
-<codeline lineno="11" refid="MaaRpc_8h_1a45cfc081184e93b8cd65fab1ec23f67c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="MaaPort_8h_1a7c19101f6ca5fe6c8f217aa09a3f2863" kindref="member">MAA_RPC_API</ref><sp/><ref refid="MaaRpc_8h_1a45cfc081184e93b8cd65fab1ec23f67c" kindref="member">MaaRpcStop</ref>();</highlight></codeline>
-<codeline lineno="12" refid="MaaRpc_8h_1a5b317a613d4acecc30a1d2f3ccf698dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="MaaPort_8h_1a7c19101f6ca5fe6c8f217aa09a3f2863" kindref="member">MAA_RPC_API</ref><sp/><ref refid="MaaRpc_8h_1a5b317a613d4acecc30a1d2f3ccf698dd" kindref="member">MaaRpcWait</ref>();</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-    </programlisting>
     <location file="include/MaaRpc/MaaRpc.h"/>
   </compounddef>
 </doxygen>

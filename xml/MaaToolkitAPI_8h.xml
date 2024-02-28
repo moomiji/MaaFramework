@@ -72,16 +72,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaToolkitDef_8h" kindref="compound">MaaToolkitDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaToolkitConfig_8h" kindref="compound">Config/MaaToolkitConfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaToolkitDevice_8h" kindref="compound">Device/MaaToolkitDevice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaToolkitExecAgent_8h" kindref="compound">ExecAgent/MaaToolkitExecAgent.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaToolkitWin32Window_8h" kindref="compound">Win32/MaaToolkitWin32Window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-    </programlisting>
     <location file="include/MaaToolkit/MaaToolkitAPI.h"/>
   </compounddef>
 </doxygen>
