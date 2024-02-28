@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="MaaController_8h_1a5d65ca9155cc516beab774bb0d70772e" kindref="member">MaaAdbControllerCreate</ref>  (MaaStringView adb_path, MaaStringView address, MaaAdbControllerType type, MaaStringView config, MaaControllerCallback callback, MaaCallbackTransparentArg callback_arg)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Use <ref refid="MaaController_8h_1a4fc910ade4b68ecf3cf1106154a8f8e0" kindref="member">MaaAdbControllerCreateV2()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac0c833f535e3c58d6efaba3ec0da41a9" kindref="member">MaaAdbControllerType_Screencap_FastestWay_Compatible</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000003"/>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="MaaInstance_8h_1a4588319d8e2e6a83fbcc9052cab1de7b" kindref="member">MaaStop</ref>  (MaaInstanceHandle inst)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>Use <ref refid="MaaInstance_8h_1a3582217c5bc290a81c2e87c7408be5f8" kindref="member">MaaPostStop()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="MaaToolkitDevice_8h_1aaafe2dca213221be9e97b8dcced31522" kindref="member">MaaToolkitFindDevice</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Use <ref refid="MaaToolkitDevice_8h_1ab9e73da4f54a0a562ff1a4b050583365" kindref="member">MaaToolkitPostFindDevice()</ref> instead. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="MaaToolkitDevice_8h_1a6be8bcc9ed938203b70fdc40810ef646" kindref="member">MaaToolkitFindDeviceWithAdb</ref>  (MaaStringView adb_path)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000005"/>Use <ref refid="MaaToolkitDevice_8h_1af8bc69522ef91127a1a81852261d0576" kindref="member">MaaToolkitPostFindDeviceWithAdb()</ref> instead.</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="deprecated"/>
+  </compounddef>
+</doxygen>

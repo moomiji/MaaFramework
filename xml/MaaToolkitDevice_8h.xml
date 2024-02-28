@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="MaaToolkitDevice_8h" kind="file" language="C++">
+    <compoundname>MaaToolkitDevice.h</compoundname>
+    <includes refid="MaaToolkitDef_8h" local="yes">../MaaToolkitDef.h</includes>
+    <includedby refid="MaaToolkitAPI_8h" local="yes">include/MaaToolkit/MaaToolkitAPI.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>MaaFramework/MaaDef.h</label>
+        <link refid="MaaDef_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MaaPort.h</label>
+        <link refid="MaaPort_8h"/>
+      </node>
+      <node id="1">
+        <label>include/MaaToolkit/Device/MaaToolkitDevice.h</label>
+        <link refid="MaaToolkitDevice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../MaaToolkitDef.h</label>
+        <link refid="MaaToolkitDef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/MaaToolkit/Device/MaaToolkitDevice.h</label>
+        <link refid="MaaToolkitDevice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/MaaToolkit/MaaToolkitAPI.h</label>
+        <link refid="MaaToolkitAPI_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1aaafe2dca213221be9e97b8dcced31522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaSize MAA_TOOLKIT_API MaaToolkitFindDevice</definition>
+        <argsstring>()</argsstring>
+        <name>MaaToolkitFindDevice</name>
+        <briefdescription>
+<para>Find ADB devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="MaaToolkitDevice_8h_1ab9e73da4f54a0a562ff1a4b050583365" kindref="member">MaaToolkitPostFindDevice()</ref> instead.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>MaaSize </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="26" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="26" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1a6be8bcc9ed938203b70fdc40810ef646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaSize MAA_TOOLKIT_API MaaToolkitFindDeviceWithAdb</definition>
+        <argsstring>(MaaStringView adb_path)</argsstring>
+        <name>MaaToolkitFindDeviceWithAdb</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>adb_path</declname>
+        </param>
+        <briefdescription>
+<para>Find ADB devices with a given ADB path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="MaaToolkitDevice_8h_1af8bc69522ef91127a1a81852261d0576" kindref="member">MaaToolkitPostFindDeviceWithAdb()</ref> instead.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adb_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaSize </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="36" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="36" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1ab9e73da4f54a0a562ff1a4b050583365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaBool MAA_TOOLKIT_API MaaToolkitPostFindDevice</definition>
+        <argsstring>()</argsstring>
+        <name>MaaToolkitPostFindDevice</name>
+        <briefdescription>
+<para>Post a request to find all ADB devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MaaBool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="43" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="43" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1af8bc69522ef91127a1a81852261d0576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaBool MAA_TOOLKIT_API MaaToolkitPostFindDeviceWithAdb</definition>
+        <argsstring>(MaaStringView adb_path)</argsstring>
+        <name>MaaToolkitPostFindDeviceWithAdb</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>adb_path</declname>
+        </param>
+        <briefdescription>
+<para>Post a request to find all ADB devices with a given ADB path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adb_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaBool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="51" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="51" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1a99d3e53ed535ed98c19309e821b2547e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaBool MAA_TOOLKIT_API MaaToolkitIsFindDeviceCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>MaaToolkitIsFindDeviceCompleted</name>
+        <briefdescription>
+<para>Check if the find device request is completed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MaaBool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="58" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="58" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1adbcac2431b78a79aec2c0bfd2ef74fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaSize MAA_TOOLKIT_API MaaToolkitWaitForFindDeviceToComplete</definition>
+        <argsstring>()</argsstring>
+        <name>MaaToolkitWaitForFindDeviceToComplete</name>
+        <briefdescription>
+<para>Wait for the find device request to complete. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MaaSize The number of devices found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="65" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="65" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1afb9db48b92dda529b6ae316b51e68caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaSize MAA_TOOLKIT_API MaaToolkitGetDeviceCount</definition>
+        <argsstring>()</argsstring>
+        <name>MaaToolkitGetDeviceCount</name>
+        <briefdescription>
+<para>Get the number of devices found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MaaSize The number of devices found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="72" column="29" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="72" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1aff566a62d7a62198800b11bcca5ebe51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaStringView MAA_TOOLKIT_API MaaToolkitGetDeviceName</definition>
+        <argsstring>(MaaSize index)</argsstring>
+        <name>MaaToolkitGetDeviceName</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the device name by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 0-based index of the device. The index should not exceed the number of devices found otherwise out_of_range exception will be thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaStringView </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="81" column="35" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="81" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1a1ba8790a1f4c9f76662c40fce012f991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaStringView MAA_TOOLKIT_API MaaToolkitGetDeviceAdbPath</definition>
+        <argsstring>(MaaSize index)</argsstring>
+        <name>MaaToolkitGetDeviceAdbPath</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the device ADB path by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 0-based index of the device. The index should not exceed the number of devices found otherwise out_of_range exception will be thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaStringView </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="90" column="35" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="90" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1afd75482fde85c04adaeb4c7bfcf0e8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaStringView MAA_TOOLKIT_API MaaToolkitGetDeviceAdbSerial</definition>
+        <argsstring>(MaaSize index)</argsstring>
+        <name>MaaToolkitGetDeviceAdbSerial</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the device ADB serial by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 0-based index of the device. The index should not exceed the number of devices found otherwise out_of_range exception will be thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaStringView </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="99" column="35" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="99" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1a23fee3e9c24deeb0133f55c48bf2ca86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2ba314321c0419e64efe128e94c20776" kindref="member">MaaAdbControllerType</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaAdbControllerType MAA_TOOLKIT_API MaaToolkitGetDeviceAdbControllerType</definition>
+        <argsstring>(MaaSize index)</argsstring>
+        <name>MaaToolkitGetDeviceAdbControllerType</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the device ADB controller type by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 0-based index of the device. The index should not exceed the number of devices found otherwise out_of_range exception will be thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaAdbControllerType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="108" column="42" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="108" declcolumn="42"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaToolkitDevice_8h_1a4f83c97f41658d709c4f6956cc30de8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> <ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref></type>
+        <definition>MaaStringView MAA_TOOLKIT_API MaaToolkitGetDeviceAdbConfig</definition>
+        <argsstring>(MaaSize index)</argsstring>
+        <name>MaaToolkitGetDeviceAdbConfig</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the device ADB config by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 0-based index of the device. The index should not exceed the number of devices found otherwise out_of_range exception will be thrown. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MaaStringView </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaToolkit/Device/MaaToolkitDevice.h" line="117" column="35" declfile="include/MaaToolkit/Device/MaaToolkitDevice.h" declline="117" declcolumn="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Toolkits for working with ADB controller. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para></para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2024 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../MaaToolkitDef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="MaaToolkitDevice_8h_1aaafe2dca213221be9e97b8dcced31522" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1aaafe2dca213221be9e97b8dcced31522" kindref="member">MaaToolkitFindDevice</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="MaaToolkitDevice_8h_1a6be8bcc9ed938203b70fdc40810ef646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1a6be8bcc9ed938203b70fdc40810ef646" kindref="member">MaaToolkitFindDeviceWithAdb</ref>(<ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>adb_path);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="MaaToolkitDevice_8h_1ab9e73da4f54a0a562ff1a4b050583365" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1ab9e73da4f54a0a562ff1a4b050583365" kindref="member">MaaToolkitPostFindDevice</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="MaaToolkitDevice_8h_1af8bc69522ef91127a1a81852261d0576" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1af8bc69522ef91127a1a81852261d0576" kindref="member">MaaToolkitPostFindDeviceWithAdb</ref>(<ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>adb_path);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="MaaToolkitDevice_8h_1a99d3e53ed535ed98c19309e821b2547e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1a99d3e53ed535ed98c19309e821b2547e" kindref="member">MaaToolkitIsFindDeviceCompleted</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="MaaToolkitDevice_8h_1adbcac2431b78a79aec2c0bfd2ef74fcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1adbcac2431b78a79aec2c0bfd2ef74fcd" kindref="member">MaaToolkitWaitForFindDeviceToComplete</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="MaaToolkitDevice_8h_1afb9db48b92dda529b6ae316b51e68caf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1afb9db48b92dda529b6ae316b51e68caf" kindref="member">MaaToolkitGetDeviceCount</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="MaaToolkitDevice_8h_1aff566a62d7a62198800b11bcca5ebe51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1aff566a62d7a62198800b11bcca5ebe51" kindref="member">MaaToolkitGetDeviceName</ref>(<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/>index);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="MaaToolkitDevice_8h_1a1ba8790a1f4c9f76662c40fce012f991" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1a1ba8790a1f4c9f76662c40fce012f991" kindref="member">MaaToolkitGetDeviceAdbPath</ref>(<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/>index);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="MaaToolkitDevice_8h_1afd75482fde85c04adaeb4c7bfcf0e8c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1afd75482fde85c04adaeb4c7bfcf0e8c9" kindref="member">MaaToolkitGetDeviceAdbSerial</ref>(<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/>index);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="MaaToolkitDevice_8h_1a23fee3e9c24deeb0133f55c48bf2ca86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2ba314321c0419e64efe128e94c20776" kindref="member">MaaAdbControllerType</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1a23fee3e9c24deeb0133f55c48bf2ca86" kindref="member">MaaToolkitGetDeviceAdbControllerType</ref>(<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/>index);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="MaaToolkitDevice_8h_1a4f83c97f41658d709c4f6956cc30de8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref><sp/><ref refid="MaaToolkitDevice_8h_1a4f83c97f41658d709c4f6956cc30de8c" kindref="member">MaaToolkitGetDeviceAdbConfig</ref>(<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref><sp/>index);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/MaaToolkit/Device/MaaToolkitDevice.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="group__MaaControllerPostRequest" kind="group">
+    <compoundname>MaaControllerPostRequest</compoundname>
+    <title>Controller Requests</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga9f1d9f69a1ee2388233fb338065d661a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostConnection</definition>
+        <argsstring>(MaaControllerHandle ctrl)</argsstring>
+        <name>MaaControllerPostConnection</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="118" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="118" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga16ff6000b5c9821e8b076c05c43fdc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostClick</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t x, int32_t y)</argsstring>
+        <name>MaaControllerPostClick</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="120" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="120" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1gac425d2a0e5cf0fb344b25463d6e4d962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostSwipe</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t x1, int32_t y1, int32_t x2, int32_t y2, int32_t duration)</argsstring>
+        <name>MaaControllerPostSwipe</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="122" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="122" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga61ed09b6f8a2f5d78d94b65bee40242b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostPressKey</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t keycode)</argsstring>
+        <name>MaaControllerPostPressKey</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="125" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="125" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga071665a164b75d529fe55f9ef31ad67f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostInputText</definition>
+        <argsstring>(MaaControllerHandle ctrl, MaaStringView text)</argsstring>
+        <name>MaaControllerPostInputText</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="127" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="127" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga58a54febf7e26bd13460d58558232866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostTouchDown</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t contact, int32_t x, int32_t y, int32_t pressure)</argsstring>
+        <name>MaaControllerPostTouchDown</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="129" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="129" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1gaac32024c763de836416541a0ec2f953f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostTouchMove</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t contact, int32_t x, int32_t y, int32_t pressure)</argsstring>
+        <name>MaaControllerPostTouchMove</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="131" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="131" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga2a58b6fdfda4aceef849d64ce3f6c98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostTouchUp</definition>
+        <argsstring>(MaaControllerHandle ctrl, int32_t contact)</argsstring>
+        <name>MaaControllerPostTouchUp</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="134" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="134" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="group__MaaControllerPostRequest_1ga2743ff3095ac79764aaa56fb1395e5aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaCtrlId MAA_FRAMEWORK_API MaaControllerPostScreencap</definition>
+        <argsstring>(MaaControllerHandle ctrl)</argsstring>
+        <name>MaaControllerPostScreencap</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref></type>
+          <declname>ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Instance/MaaController.h" line="136" column="33" declfile="include/MaaFramework/Instance/MaaController.h" declline="136" declcolumn="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The following functions post their corresponding requests to the controller and return the id of the request. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

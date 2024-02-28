@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="MaaSyncContext_8h" kind="file" language="C++">
+    <compoundname>MaaSyncContext.h</compoundname>
+    <includes refid="MaaDef_8h" local="yes">../MaaDef.h</includes>
+    <includes refid="MaaPort_8h" local="yes">../MaaPort.h</includes>
+    <includedby refid="MaaAPI_8h" local="yes">include/MaaFramework/MaaAPI.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../MaaDef.h</label>
+        <link refid="MaaDef_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MaaPort.h</label>
+        <link refid="MaaPort_8h"/>
+      </node>
+      <node id="1">
+        <label>include/MaaFramework/Task/MaaSyncContext.h</label>
+        <link refid="MaaSyncContext_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/MaaFramework/MaaAPI.h</label>
+        <link refid="MaaAPI_8h"/>
+      </node>
+      <node id="1">
+        <label>include/MaaFramework/Task/MaaSyncContext.h</label>
+        <link refid="MaaSyncContext_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="MaaSyncContext_8h_1a689ac33a02fe60c54856b9c615242061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextRunTask</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaStringView task_name, MaaStringView param)</argsstring>
+        <name>MaaSyncContextRunTask</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_name</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="20" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="20" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a2830cb6b39282625035d90aa1c3f7e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextRunRecognizer</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaImageBufferHandle image, MaaStringView task_name, MaaStringView task_param, MaaRectHandle out_box, MaaStringBufferHandle out_detail)</argsstring>
+        <name>MaaSyncContextRunRecognizer</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" kindref="member">MaaImageBufferHandle</ref></type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_name</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a00152c7eaccf612e460ea6872455f9cd" kindref="member">MaaRectHandle</ref></type>
+          <declname>out_box</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref></type>
+          <declname>out_detail</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="22" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="22" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a663d5fff577b10b287a990f315206e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextRunAction</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaStringView task_name, MaaStringView task_param, MaaRectHandle cur_box, MaaStringView cur_rec_detail)</argsstring>
+        <name>MaaSyncContextRunAction</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_name</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a00152c7eaccf612e460ea6872455f9cd" kindref="member">MaaRectHandle</ref></type>
+          <declname>cur_box</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>cur_rec_detail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="26" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="26" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a11f90fcd04518942aff5f92883e83ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextClick</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t x, int32_t y)</argsstring>
+        <name>MaaSyncContextClick</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="29" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="29" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a95be9196ec39f4d6e2ce2b79587cf219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextSwipe</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t x1, int32_t y1, int32_t x2, int32_t y2, int32_t duration)</argsstring>
+        <name>MaaSyncContextSwipe</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="30" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="30" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a402396e52b1b2686e65cd1ef608f2c17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextPressKey</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t keycode)</argsstring>
+        <name>MaaSyncContextPressKey</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="32" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="32" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1afefbf3e74270892aa8bd5fc12e6f28da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextInputText</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaStringView text)</argsstring>
+        <name>MaaSyncContextInputText</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="33" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="33" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1ab8a8ef36756920f98b58b047e2d88e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextTouchDown</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t contact, int32_t x, int32_t y, int32_t pressure)</argsstring>
+        <name>MaaSyncContextTouchDown</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="35" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="35" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1aecdb0f951b051c476cc02614b18e4b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextTouchMove</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t contact, int32_t x, int32_t y, int32_t pressure)</argsstring>
+        <name>MaaSyncContextTouchMove</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>pressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="37" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="37" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a8d1e2d6db68fdd3650297b0303c68cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextTouchUp</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, int32_t contact)</argsstring>
+        <name>MaaSyncContextTouchUp</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="39" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="39" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1aa052fe10ce1c7833d9cc91dccd0afad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextScreencap</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaImageBufferHandle out_image)</argsstring>
+        <name>MaaSyncContextScreencap</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" kindref="member">MaaImageBufferHandle</ref></type>
+          <declname>out_image</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="41" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="41" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="MaaSyncContext_8h_1a8f8063756a3dd2f5e21804904d3f73c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> <ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref></type>
+        <definition>MaaBool MAA_FRAMEWORK_API MaaSyncContextGetTaskResult</definition>
+        <argsstring>(MaaSyncContextHandle sync_context, MaaStringView task_name, MaaStringBufferHandle out_task_result)</argsstring>
+        <name>MaaSyncContextGetTaskResult</name>
+        <param>
+          <type><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref></type>
+          <declname>sync_context</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref></type>
+          <declname>task_name</declname>
+        </param>
+        <param>
+          <type><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref></type>
+          <declname>out_task_result</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/Task/MaaSyncContext.h" line="43" column="31" declfile="include/MaaFramework/Task/MaaSyncContext.h" declline="43" declcolumn="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SyncContext is a context for running tasks, recognizers, actions, and other operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para></para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2024 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../MaaDef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../MaaPort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="MaaSyncContext_8h_1a689ac33a02fe60c54856b9c615242061" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a689ac33a02fe60c54856b9c615242061" kindref="member">MaaSyncContextRunTask</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_name,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>param);</highlight></codeline>
+<codeline lineno="22" refid="MaaSyncContext_8h_1a2830cb6b39282625035d90aa1c3f7e28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a2830cb6b39282625035d90aa1c3f7e28" kindref="member">MaaSyncContextRunRecognizer</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/><ref refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" kindref="member">MaaImageBufferHandle</ref><sp/>image,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_name,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_param,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMaaRect" kindref="compound">MaaRectHandle</ref><sp/>out_box<sp/>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref><sp/>out_detail<sp/>);</highlight></codeline>
+<codeline lineno="26" refid="MaaSyncContext_8h_1a663d5fff577b10b287a990f315206e25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a663d5fff577b10b287a990f315206e25" kindref="member">MaaSyncContextRunAction</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_name,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_param,<sp/><ref refid="structMaaRect" kindref="compound">MaaRectHandle</ref><sp/>cur_box,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>cur_rec_detail);</highlight></codeline>
+<codeline lineno="29" refid="MaaSyncContext_8h_1a11f90fcd04518942aff5f92883e83ff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a11f90fcd04518942aff5f92883e83ff9" kindref="member">MaaSyncContextClick</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>x,<sp/>int32_t<sp/>y);</highlight></codeline>
+<codeline lineno="30" refid="MaaSyncContext_8h_1a95be9196ec39f4d6e2ce2b79587cf219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a95be9196ec39f4d6e2ce2b79587cf219" kindref="member">MaaSyncContextSwipe</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>x1,<sp/>int32_t<sp/>y1,<sp/>int32_t<sp/>x2,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>y2,<sp/>int32_t<sp/>duration);</highlight></codeline>
+<codeline lineno="32" refid="MaaSyncContext_8h_1a402396e52b1b2686e65cd1ef608f2c17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a402396e52b1b2686e65cd1ef608f2c17" kindref="member">MaaSyncContextPressKey</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>keycode);</highlight></codeline>
+<codeline lineno="33" refid="MaaSyncContext_8h_1afefbf3e74270892aa8bd5fc12e6f28da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1afefbf3e74270892aa8bd5fc12e6f28da" kindref="member">MaaSyncContextInputText</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>text);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="MaaSyncContext_8h_1ab8a8ef36756920f98b58b047e2d88e01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1ab8a8ef36756920f98b58b047e2d88e01" kindref="member">MaaSyncContextTouchDown</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>contact,<sp/>int32_t<sp/>x,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>y,<sp/>int32_t<sp/>pressure);</highlight></codeline>
+<codeline lineno="37" refid="MaaSyncContext_8h_1aecdb0f951b051c476cc02614b18e4b54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1aecdb0f951b051c476cc02614b18e4b54" kindref="member">MaaSyncContextTouchMove</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>contact,<sp/>int32_t<sp/>x,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>y,<sp/>int32_t<sp/>pressure);</highlight></codeline>
+<codeline lineno="39" refid="MaaSyncContext_8h_1a8d1e2d6db68fdd3650297b0303c68cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a8d1e2d6db68fdd3650297b0303c68cda" kindref="member">MaaSyncContextTouchUp</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/>int32_t<sp/>contact);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="MaaSyncContext_8h_1aa052fe10ce1c7833d9cc91dccd0afad4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1aa052fe10ce1c7833d9cc91dccd0afad4" kindref="member">MaaSyncContextScreencap</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" kindref="member">MaaImageBufferHandle</ref><sp/>out_image<sp/>);</highlight></codeline>
+<codeline lineno="43" refid="MaaSyncContext_8h_1a8f8063756a3dd2f5e21804904d3f73c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref><sp/><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref><sp/><ref refid="MaaSyncContext_8h_1a8f8063756a3dd2f5e21804904d3f73c9" kindref="member">MaaSyncContextGetTaskResult</ref>(<ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref><sp/>sync_context,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>task_name,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref><sp/>out_task_result<sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/MaaFramework/Task/MaaSyncContext.h"/>
+  </compounddef>
+</doxygen>

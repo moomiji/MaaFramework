@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_e674db8bd75c3b5e20a7c6c67b57f3fa" kind="dir">
+    <compoundname>include/MaaRpc</compoundname>
+    <innerfile refid="MaaRpc_8h">MaaRpc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/MaaRpc/"/>
+  </compounddef>
+</doxygen>

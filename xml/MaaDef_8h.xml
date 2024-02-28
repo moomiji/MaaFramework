@@ -1,0 +1,1627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="MaaDef_8h" kind="file" language="C++">
+    <compoundname>MaaDef.h</compoundname>
+    <includes refid="MaaPort_8h" local="yes">MaaPort.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="MaaController_8h" local="yes">include/MaaFramework/Instance/MaaController.h</includedby>
+    <includedby refid="MaaCustomController_8h" local="yes">include/MaaFramework/Instance/MaaCustomController.h</includedby>
+    <includedby refid="MaaInstance_8h" local="yes">include/MaaFramework/Instance/MaaInstance.h</includedby>
+    <includedby refid="MaaResource_8h" local="yes">include/MaaFramework/Instance/MaaResource.h</includedby>
+    <includedby refid="MaaAPI_8h" local="yes">include/MaaFramework/MaaAPI.h</includedby>
+    <includedby refid="MaaCustomAction_8h" local="yes">include/MaaFramework/Task/MaaCustomAction.h</includedby>
+    <includedby refid="MaaCustomRecognizer_8h" local="yes">include/MaaFramework/Task/MaaCustomRecognizer.h</includedby>
+    <includedby refid="MaaSyncContext_8h" local="yes">include/MaaFramework/Task/MaaSyncContext.h</includedby>
+    <includedby refid="MaaBuffer_8h" local="yes">include/MaaFramework/Utility/MaaBuffer.h</includedby>
+    <includedby refid="MaaUtility_8h" local="yes">include/MaaFramework/Utility/MaaUtility.h</includedby>
+    <includedby refid="MaaRpc_8h" local="yes">include/MaaRpc/MaaRpc.h</includedby>
+    <includedby refid="MaaToolkitDef_8h" local="yes">include/MaaToolkit/MaaToolkitDef.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/MaaFramework/MaaDef.h</label>
+        <link refid="MaaDef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MaaPort.h</label>
+        <link refid="MaaPort_8h"/>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/MaaFramework/Instance/MaaController.h</label>
+        <link refid="MaaController_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/MaaFramework/Instance/MaaCustomController.h</label>
+        <link refid="MaaCustomController_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/MaaFramework/Instance/MaaInstance.h</label>
+        <link refid="MaaInstance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/MaaFramework/Instance/MaaResource.h</label>
+        <link refid="MaaResource_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/MaaFramework/MaaAPI.h</label>
+        <link refid="MaaAPI_8h"/>
+      </node>
+      <node id="1">
+        <label>include/MaaFramework/MaaDef.h</label>
+        <link refid="MaaDef_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/MaaFramework/Task/MaaCustomAction.h</label>
+        <link refid="MaaCustomAction_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/MaaFramework/Task/MaaCustomRecognizer.h</label>
+        <link refid="MaaCustomRecognizer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/MaaFramework/Task/MaaSyncContext.h</label>
+        <link refid="MaaSyncContext_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/MaaFramework/Utility/MaaBuffer.h</label>
+        <link refid="MaaBuffer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/MaaFramework/Utility/MaaUtility.h</label>
+        <link refid="MaaUtility_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>include/MaaRpc/MaaRpc.h</label>
+        <link refid="MaaRpc_8h"/>
+      </node>
+      <node id="14">
+        <label>include/MaaToolkit/Config/MaaToolkitConfig.h</label>
+        <link refid="MaaToolkitConfig_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>include/MaaToolkit/Device/MaaToolkitDevice.h</label>
+        <link refid="MaaToolkitDevice_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>include/MaaToolkit/ExecAgent/MaaToolkitExecAgent.h</label>
+        <link refid="MaaToolkitExecAgent_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>include/MaaToolkit/MaaToolkitAPI.h</label>
+        <link refid="MaaToolkitAPI_8h"/>
+      </node>
+      <node id="13">
+        <label>include/MaaToolkit/MaaToolkitDef.h</label>
+        <link refid="MaaToolkitDef_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>include/MaaToolkit/Win32/MaaToolkitWin32Window.h</label>
+        <link refid="MaaToolkitWin32Window_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structMaaRect" prot="public">MaaRect</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="MaaDef_8h_1a9eddd2fb954b055dd2ea4d9cdd267188" prot="public" static="no">
+        <name>MaaNullSize</name>
+        <initializer>((<ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref>)-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="29" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1a1b93c853d770a6723301f135d9e9e3bc" prot="public" static="no">
+        <name>MaaInvalidId</name>
+        <initializer>((<ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref>)0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="60" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1ae77fe3e2413b89e08d7cae72f4c6320d" prot="public" static="no">
+        <name>MaaTaskParam_Empty</name>
+        <initializer>&quot;{}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="149" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1a810fc320b7071d4aafd96a4df49052a6" prot="public" static="no">
+        <name>MaaAdbControllerType_Touch_Mask</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="152" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1a0aba12231a057e024b6f886d5ca57e42" prot="public" static="no">
+        <name>MaaAdbControllerType_Key_Mask</name>
+        <initializer>0xFF00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="153" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1a60c0e9e60c279369555268de16d8f9c8" prot="public" static="no">
+        <name>MaaAdbControllerType_Screencap_Mask</name>
+        <initializer>0xFF0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="154" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1af7ef816067f31da570d95a87a0a06506" prot="public" static="no">
+        <name>MaaWin32ControllerType_Touch_Mask</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="219" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1a0dcb911c9b2938e37cce89f794cf9edf" prot="public" static="no">
+        <name>MaaWin32ControllerType_Key_Mask</name>
+        <initializer>0xFF00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="220" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MaaDef_8h_1ae3c5ed765271da72f92ca79b20b7842c" prot="public" static="no">
+        <name>MaaWin32ControllerType_Screencap_Mask</name>
+        <initializer>0xFF0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="221" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaStatusEnum</name>
+        <enumvalue id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a062c9b1508f38dba096aa2587ba08d40" prot="public">
+          <name>MaaStatus_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6ad675ca7fe058998743ec8d99c72a914e" prot="public">
+          <name>MaaStatus_Pending</name>
+          <initializer>= 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a05c689d4235e1214eab9abaf7cd6809b" prot="public">
+          <name>MaaStatus_Running</name>
+          <initializer>= 2000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a26dc49974c883868a557aa9d7a5d23ee" prot="public">
+          <name>MaaStatus_Success</name>
+          <initializer>= 3000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a341c204f14050eb7dc068032ee9eaf63" prot="public">
+          <name>MaaStatus_Failed</name>
+          <initializer>= 4000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="34" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaLoggingLevelEunm</name>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a886d0c4c0b743640330ce103ef377f96" prot="public">
+          <name>MaaLoggingLevel_Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9aa3fa463a8d3ae69d4e6cd55e468a9b0e" prot="public">
+          <name>MaaLoggingLevel_Fatal</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a92f97dd39fafb12283ce88b4b2b1d191" prot="public">
+          <name>MaaLoggingLevel_Error</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9ab8ab1b9f82635c2f5ff28c7a9a1978cb" prot="public">
+          <name>MaaLoggingLevel_Warn</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a58564e8e730e7bb829c2c177abed4c03" prot="public">
+          <name>MaaLoggingLevel_Info</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a0de032c18e2fa9d3bc0ed24f534b3e84" prot="public">
+          <name>MaaLoggingLevel_Debug</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a3d13be5b9e5135ffff14f59cc3d7a827" prot="public">
+          <name>MaaLoggingLevel_Trace</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a14f8e972156685897fa8fc5b2195a214" prot="public">
+          <name>MaaLoggingLevel_All</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="44" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38ee" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaGlobalOptionEnum</name>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf81992513d077ca4fe38f7ae787695cd" prot="public">
+          <name>MaaGlobalOption_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea8669cc4382b1f28ea428aff511029b5c" prot="public">
+          <name>MaaGlobalOption_LogDir</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log dir <verbatim>value: string, eg: &quot;C:\\Users\\Administrator\\Desktop\\log&quot;; val_size: string length 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaaf9faa9621c830f79ba687467a3d9c5a" prot="public">
+          <name>MaaGlobalOption_SaveDraw</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Whether to save draw <verbatim>value: bool, eg: true; val_size: sizeof(bool) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf316c8e11fd054dfe965b904e3ce93b4" prot="public">
+          <name>MaaGlobalOption_Recording</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dump all screenshots and actions <verbatim>Recording will evaluate to true if any of this or MaaCtrlOptionEnum::MaaCtrlOption_Recording is true.
+value: bool, eg: true; val_size: sizeof(bool) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea58ba5999f483b497af3eac6d327d53e6" prot="public">
+          <name>MaaGlobalOption_StdoutLevel</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The level of log output to stdout <verbatim>value: MaaLoggingLevel, val_size: sizeof(MaaLoggingLevel)
+default value is MaaLoggingLevel_Error 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea1a175dc6811ec0aedb23b87b98d68b40" prot="public">
+          <name>MaaGlobalOption_ShowHitDraw</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Whether to show hit draw <verbatim>value: bool, eg: true; val_size: sizeof(bool) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="67" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="68" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaResOptionEnum</name>
+        <enumvalue id="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116afdc31dbaaa6b035f11b40cd574165f8e" prot="public">
+          <name>MaaResOption_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="100" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaCtrlOptionEnum</name>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a4afeb097dfa70801c8fa43d83bb5c51f" prot="public">
+          <name>MaaCtrlOption_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a83157be6a22a5e62d4929c7bcd095f75" prot="public">
+          <name>MaaCtrlOption_ScreenshotTargetLongSide</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only one of long and short side can be set, and the other is automatically scaled according to the aspect ratio. <verbatim>value: int, eg: 1920; val_size: sizeof(int) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3" prot="public">
+          <name>MaaCtrlOption_ScreenshotTargetShortSide</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Only one of long and short side can be set, and the other is automatically scaled according to the aspect ratio. <verbatim>value: int, eg: 1080; val_size: sizeof(int) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb" prot="public">
+          <name>MaaCtrlOption_DefaultAppPackageEntry</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>For StartApp <verbatim>value: string, eg: &quot;com.hypergryph.arknights/com.u8.sdk.U8UnityContext&quot;; val_size: string length 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8" prot="public">
+          <name>MaaCtrlOption_DefaultAppPackage</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>For StopApp <verbatim>value: string, eg: &quot;com.hypergryph.arknights&quot;; val_size: string length 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a" prot="public">
+          <name>MaaCtrlOption_Recording</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dump all screenshots and actions <verbatim>Recording will evaluate to true if any of this or MaaGlobalOptionEnum::MaaGlobalOption_Recording is true.
+
+value: bool, eg: true; val_size: sizeof(bool) 
+</verbatim> </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Option keys for controller instance options. See <ref refid="MaaController_8h_1a062d5cecd8362015de2041be29b0ee90" kindref="member">MaaControllerSetOption()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="111" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="112" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaInstOptionEnum</name>
+        <enumvalue id="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8ad2dc9015f1a66ca5803d998bed0a1b90" prot="public">
+          <name>MaaInstOption_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="144" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaAdbControllerTypeEnum</name>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a3d59492c4b3ea45670b9ee310c8885cc" prot="public">
+          <name>MaaAdbControllerType_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2108c7bcf252bb64b6462aa5f09f7ae0" prot="public">
+          <name>MaaAdbControllerType_Touch_Adb</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a38213a5995142a9ca8f057e1ed985bd1" prot="public">
+          <name>MaaAdbControllerType_Touch_MiniTouch</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47adf8d2f14e385b73ca79ff57c81ca390f" prot="public">
+          <name>MaaAdbControllerType_Touch_MaaTouch</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ad05d0ac644b94fc434991d24f5e47c24" prot="public">
+          <name>MaaAdbControllerType_Touch_AutoDetect</name>
+          <initializer>= MaaAdbControllerType_Touch_Mask - 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2d60b8a3560c086a6fd3ffe7be112411" prot="public">
+          <name>MaaAdbControllerType_Key_Adb</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a7f4048cdd05b342e1ab5691b9d367722" prot="public">
+          <name>MaaAdbControllerType_Key_MaaTouch</name>
+          <initializer>= 2 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a1deafc6cc3d4e512b0cd5158efa72c7a" prot="public">
+          <name>MaaAdbControllerType_Key_AutoDetect</name>
+          <initializer>= MaaAdbControllerType_Key_Mask - (1 &lt;&lt; 8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a59924f7760f923f7c3c0b32f328be842" prot="public">
+          <name>MaaAdbControllerType_Input_Preset_Adb</name>
+          <initializer>= MaaAdbControllerType_Touch_Adb | MaaAdbControllerType_Key_Adb</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a29acac3c28459b54743e7b20f577cafa" prot="public">
+          <name>MaaAdbControllerType_Input_Preset_Minitouch</name>
+          <initializer>= MaaAdbControllerType_Touch_MiniTouch | MaaAdbControllerType_Key_Adb</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a876960f4dd9057a9c49a8347a4a206a5" prot="public">
+          <name>MaaAdbControllerType_Input_Preset_Maatouch</name>
+          <initializer>=
+        MaaAdbControllerType_Touch_MaaTouch | MaaAdbControllerType_Key_MaaTouch</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a5f73e768699d6dcb9c1d5a77059af606" prot="public">
+          <name>MaaAdbControllerType_Input_Preset_AutoDetect</name>
+          <initializer>=
+        MaaAdbControllerType_Touch_AutoDetect | MaaAdbControllerType_Key_AutoDetect</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac0c833f535e3c58d6efaba3ec0da41a9" prot="public">
+          <name>MaaAdbControllerType_Screencap_FastestWay_Compatible</name>
+          <initializer>= 1 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect></para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac8462950eca0594fc60c982c8734e876" prot="public">
+          <name>MaaAdbControllerType_Screencap_RawByNetcat</name>
+          <initializer>= 2 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ade67275eb3d17cf1f015af70747c8b90" prot="public">
+          <name>MaaAdbControllerType_Screencap_RawWithGzip</name>
+          <initializer>= 3 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a052277116be3e016132bb16642816439" prot="public">
+          <name>MaaAdbControllerType_Screencap_Encode</name>
+          <initializer>= 4 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a08444c4d9943abf244b4ce90fc25b2a3" prot="public">
+          <name>MaaAdbControllerType_Screencap_EncodeToFile</name>
+          <initializer>= 5 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a11c059d2505bcc10bf44804afec2679b" prot="public">
+          <name>MaaAdbControllerType_Screencap_MinicapDirect</name>
+          <initializer>= 6 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a015a23fecc81d30ecb4d1fa9d0b01643" prot="public">
+          <name>MaaAdbControllerType_Screencap_MinicapStream</name>
+          <initializer>= 7 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a16ae77e49c0b8a191186e299b63cc3f4" prot="public">
+          <name>MaaAdbControllerType_Screencap_FastestLosslessWay</name>
+          <initializer>= MaaAdbControllerType_Screencap_Mask - (2 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ae30111ce0fc2dc34a4d911928c1848fd" prot="public">
+          <name>MaaAdbControllerType_Screencap_FastestWay</name>
+          <initializer>= MaaAdbControllerType_Screencap_Mask - (1 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ADB controller type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The ADB controller type consists of three parts: touch, key, and screencap. The touch part is used to control the touch events on the device. The key part is used to control the key events on the device. The screencap part is used to capture the screen of the device. The final value is the combination of the three parts as follows:</para>
+<para>touch_type | key_type | screencap_type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="168" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="169" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaDbgControllerTypeEnum</name>
+        <enumvalue id="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a5e57e27bb1c791123d2728c3328c864d" prot="public">
+          <name>MaaDbgController_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a8ae80556a7d8543a24f45147e691788b" prot="public">
+          <name>MaaDbgControllerType_CarouselImage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a35f420f73bc344a6a42a781dcfcceea6" prot="public">
+          <name>MaaDbgControllerType_ReplayRecording</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="201" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="202" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9da" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaThriftControllerTypeEnum</name>
+        <enumvalue id="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa54c432b0c83e92461c4acb80e8045e05" prot="public">
+          <name>MaaThriftController_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa9c4f24dd98c6e1c84339d44ba880795c" prot="public">
+          <name>MaaThriftControllerType_Socket</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daaf2861db948140dfd2b9b377c0d9534ab" prot="public">
+          <name>MaaThriftControllerType_UnixDomainSocket</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="210" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="211" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="enum" id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MaaWin32ControllerTypeEnum</name>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a9c3233de7b124d4ada69d5e6f8270921" prot="public">
+          <name>MaaWin32Controller_Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a647d9761d06e8fb49d78ac49bb05afbd" prot="public">
+          <name>MaaWin32ControllerType_Touch_SendMessage</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a88f9fc7384298de423f1df17ff471417" prot="public">
+          <name>MaaWin32ControllerType_Key_SendMessage</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2aed723981d356c9f6ad3beff4b96a9d3c" prot="public">
+          <name>MaaWin32ControllerType_Screencap_GDI</name>
+          <initializer>= 1 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a2cef83ab99d6116b517741e9e1724f2a" prot="public">
+          <name>MaaWin32ControllerType_Screencap_DXGI_DesktopDup</name>
+          <initializer>= 2 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a8af6e4ac88c03d92e0376f67ee4a62b6" prot="public">
+          <name>MaaWin32ControllerType_Screencap_DXGI_FramePool</name>
+          <initializer>= 4 &lt;&lt; 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Win32 controller type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See AdbControllerTypeEnum to know how the value is composed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="229" column="1" bodyfile="include/MaaFramework/MaaDef.h" bodystart="230" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" prot="public" static="no">
+        <type>struct MaaStringBuffer *</type>
+        <definition>typedef struct MaaStringBuffer* MaaStringBufferHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaStringBufferHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="16" column="31" bodyfile="include/MaaFramework/MaaDef.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" prot="public" static="no">
+        <type>struct MaaImageBuffer *</type>
+        <definition>typedef struct MaaImageBuffer* MaaImageBufferHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaImageBufferHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="18" column="30" bodyfile="include/MaaFramework/MaaDef.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1adaf57d636373ece07f2b2f651c49dfef" prot="public" static="no">
+        <type>struct MaaResourceAPI *</type>
+        <definition>typedef struct MaaResourceAPI* MaaResourceHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaResourceHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="21" column="30" bodyfile="include/MaaFramework/MaaDef.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" prot="public" static="no">
+        <type>struct MaaControllerAPI *</type>
+        <definition>typedef struct MaaControllerAPI* MaaControllerHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaControllerHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="23" column="32" bodyfile="include/MaaFramework/MaaDef.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1ab43696565db752309c61e462c22d3d93" prot="public" static="no">
+        <type>struct MaaInstanceAPI *</type>
+        <definition>typedef struct MaaInstanceAPI* MaaInstanceHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaInstanceHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="25" column="30" bodyfile="include/MaaFramework/MaaDef.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t MaaBool</definition>
+        <argsstring></argsstring>
+        <name>MaaBool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="27" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t MaaSize</definition>
+        <argsstring></argsstring>
+        <name>MaaSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="28" column="18" bodyfile="include/MaaFramework/MaaDef.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" prot="public" static="no">
+        <type>const char *</type>
+        <definition>typedef const char* MaaStringView</definition>
+        <argsstring></argsstring>
+        <name>MaaStringView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="31" column="20" bodyfile="include/MaaFramework/MaaDef.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1ada00e4de6b9b4dcae75ed50f4bcaeef5" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaStatus</definition>
+        <argsstring></argsstring>
+        <name>MaaStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="33" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1af8447ae4ab37f4c740d287a6697d2b72" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaLoggingLevel</definition>
+        <argsstring></argsstring>
+        <name>MaaLoggingLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="43" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t MaaId</definition>
+        <argsstring></argsstring>
+        <name>MaaId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="56" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref></type>
+        <definition>typedef MaaId MaaCtrlId</definition>
+        <argsstring></argsstring>
+        <name>MaaCtrlId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="57" column="15" bodyfile="include/MaaFramework/MaaDef.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1ac1f7514a514f2b5af32cabc02eedca85" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref></type>
+        <definition>typedef MaaId MaaResId</definition>
+        <argsstring></argsstring>
+        <name>MaaResId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="58" column="15" bodyfile="include/MaaFramework/MaaDef.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a711b3db9be6db60ae4cb09e3629e42f0" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref></type>
+        <definition>typedef MaaId MaaTaskId</definition>
+        <argsstring></argsstring>
+        <name>MaaTaskId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="59" column="15" bodyfile="include/MaaFramework/MaaDef.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaOption</definition>
+        <argsstring></argsstring>
+        <name>MaaOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="62" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* MaaOptionValue</definition>
+        <argsstring></argsstring>
+        <name>MaaOptionValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="63" column="14" bodyfile="include/MaaFramework/MaaDef.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a56ff604006917171af8e4b4974db28ef" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t MaaOptionValueSize</definition>
+        <argsstring></argsstring>
+        <name>MaaOptionValueSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="64" column="18" bodyfile="include/MaaFramework/MaaDef.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a78a454cf5bf3e18aab3aef29cfc7b91c" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref></type>
+        <definition>typedef MaaOption MaaGlobalOption</definition>
+        <argsstring></argsstring>
+        <name>MaaGlobalOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="66" column="19" bodyfile="include/MaaFramework/MaaDef.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a96a661c5a0739f3238d192949635b7f7" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref></type>
+        <definition>typedef MaaOption MaaResOption</definition>
+        <argsstring></argsstring>
+        <name>MaaResOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="99" column="19" bodyfile="include/MaaFramework/MaaDef.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1af8335ffd5a7df65830402c82a396c94e" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref></type>
+        <definition>typedef MaaOption MaaCtrlOption</definition>
+        <argsstring></argsstring>
+        <name>MaaCtrlOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="105" column="19" bodyfile="include/MaaFramework/MaaDef.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1abb0751f599cf40a8b1477865fef28165" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref></type>
+        <definition>typedef MaaOption MaaInstOption</definition>
+        <argsstring></argsstring>
+        <name>MaaInstOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="143" column="19" bodyfile="include/MaaFramework/MaaDef.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a2ba314321c0419e64efe128e94c20776" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaAdbControllerType</definition>
+        <argsstring></argsstring>
+        <name>MaaAdbControllerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="151" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1aff72391259f2cc9a58e94a2dece637e8" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaDbgControllerType</definition>
+        <argsstring></argsstring>
+        <name>MaaDbgControllerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="200" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a6b455ee07566bef26f05bfce91017ca9" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaThriftControllerType</definition>
+        <argsstring></argsstring>
+        <name>MaaThriftControllerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="209" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1abdbcb048447e802ad2b48e7755b1776c" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t MaaWin32ControllerType</definition>
+        <argsstring></argsstring>
+        <name>MaaWin32ControllerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="218" column="17" bodyfile="include/MaaFramework/MaaDef.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a3da139ef5684ba4fab68e47797c0d50c" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* MaaWin32Hwnd</definition>
+        <argsstring></argsstring>
+        <name>MaaWin32Hwnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="242" column="14" bodyfile="include/MaaFramework/MaaDef.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* MaaTransparentArg</definition>
+        <argsstring></argsstring>
+        <name>MaaTransparentArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="244" column="14" bodyfile="include/MaaFramework/MaaDef.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1af61e880b2ec14e6ced517f2c7457a1b3" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" kindref="member">MaaTransparentArg</ref></type>
+        <definition>typedef MaaTransparentArg MaaCallbackTransparentArg</definition>
+        <argsstring></argsstring>
+        <name>MaaCallbackTransparentArg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="245" column="27" bodyfile="include/MaaFramework/MaaDef.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* MaaAPICallback) (MaaStringView msg, MaaStringView details_json, MaaTransparentArg callback_arg)</definition>
+        <argsstring>)(MaaStringView msg, MaaStringView details_json, MaaTransparentArg callback_arg)</argsstring>
+        <name>MaaAPICallback</name>
+        <briefdescription>
+<para>The callback function type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message. See <ref refid="MaaMsg_8h" kindref="compound">MaaMsg.h</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>details_json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The details in JSON format. See doc in <ref refid="MaaMsg_8h" kindref="compound">MaaMsg.h</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="253" column="9" bodyfile="include/MaaFramework/MaaDef.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1af4bd0a409b4beff6c3ef2422f3e8b431" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref></type>
+        <definition>typedef MaaAPICallback MaaResourceCallback</definition>
+        <argsstring></argsstring>
+        <name>MaaResourceCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="254" column="24" bodyfile="include/MaaFramework/MaaDef.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a42e88ec9161f3484a20ee8cad7409fe5" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref></type>
+        <definition>typedef MaaAPICallback MaaControllerCallback</definition>
+        <argsstring></argsstring>
+        <name>MaaControllerCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="255" column="24" bodyfile="include/MaaFramework/MaaDef.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1ab45bd56ec96933eb8737d6b9c0479656" prot="public" static="no">
+        <type><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref></type>
+        <definition>typedef MaaAPICallback MaaInstanceCallback</definition>
+        <argsstring></argsstring>
+        <name>MaaInstanceCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="256" column="24" bodyfile="include/MaaFramework/MaaDef.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1ad08eb5199c33a7c772aacb62087617a3" prot="public" static="no">
+        <type>struct <ref refid="structMaaCustomControllerAPI" kindref="compound">MaaCustomControllerAPI</ref> *</type>
+        <definition>typedef struct MaaCustomControllerAPI* MaaCustomControllerHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaCustomControllerHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="259" column="38" bodyfile="include/MaaFramework/MaaDef.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a3d04340b02063d25ea61500853fca1a0" prot="public" static="no">
+        <type>struct <ref refid="structMaaCustomRecognizerAPI" kindref="compound">MaaCustomRecognizerAPI</ref> *</type>
+        <definition>typedef struct MaaCustomRecognizerAPI* MaaCustomRecognizerHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaCustomRecognizerHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="262" column="38" bodyfile="include/MaaFramework/MaaDef.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a4889d004e298d4fb969a7988dc65a55e" prot="public" static="no">
+        <type>struct <ref refid="structMaaCustomActionAPI" kindref="compound">MaaCustomActionAPI</ref> *</type>
+        <definition>typedef struct MaaCustomActionAPI* MaaCustomActionHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaCustomActionHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="265" column="34" bodyfile="include/MaaFramework/MaaDef.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" prot="public" static="no">
+        <type>struct MaaSyncContextAPI *</type>
+        <definition>typedef struct MaaSyncContextAPI* MaaSyncContextHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaSyncContextHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="268" column="33" bodyfile="include/MaaFramework/MaaDef.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="MaaDef_8h_1a00152c7eaccf612e460ea6872455f9cd" prot="public" static="no">
+        <type>struct <ref refid="structMaaRect" kindref="compound">MaaRect</ref> *</type>
+        <definition>typedef struct MaaRect* MaaRectHandle</definition>
+        <argsstring></argsstring>
+        <name>MaaRectHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaDef.h" line="281" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The type definitions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para></para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2024 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MaaPort_8h" kindref="compound">MaaPort.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaStringBuffer;</highlight></codeline>
+<codeline lineno="16" refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaStringBuffer*<sp/><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaImageBuffer;</highlight></codeline>
+<codeline lineno="18" refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaImageBuffer*<sp/><ref refid="MaaDef_8h_1a30c4754980d5dfa504ce84d86668f031" kindref="member">MaaImageBufferHandle</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaResourceAPI;</highlight></codeline>
+<codeline lineno="21" refid="MaaDef_8h_1adaf57d636373ece07f2b2f651c49dfef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaResourceAPI*<sp/><ref refid="MaaDef_8h_1adaf57d636373ece07f2b2f651c49dfef" kindref="member">MaaResourceHandle</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaControllerAPI;</highlight></codeline>
+<codeline lineno="23" refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaControllerAPI*<sp/><ref refid="MaaDef_8h_1a59f0e2bf0a9ce9ff8dd96be800302518" kindref="member">MaaControllerHandle</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaInstanceAPI;</highlight></codeline>
+<codeline lineno="25" refid="MaaDef_8h_1ab43696565db752309c61e462c22d3d93" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaInstanceAPI*<sp/><ref refid="MaaDef_8h_1ab43696565db752309c61e462c22d3d93" kindref="member">MaaInstanceHandle</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref>;</highlight></codeline>
+<codeline lineno="28" refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref>;</highlight></codeline>
+<codeline lineno="29" refid="MaaDef_8h_1a9eddd2fb954b055dd2ea4d9cdd267188" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaNullSize<sp/>((MaaSize)-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="MaaDef_8h_1ada00e4de6b9b4dcae75ed50f4bcaeef5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1ada00e4de6b9b4dcae75ed50f4bcaeef5" kindref="member">MaaStatus</ref>;</highlight></codeline>
+<codeline lineno="34" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6" kindref="member">MaaStatusEnum</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a062c9b1508f38dba096aa2587ba08d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a062c9b1508f38dba096aa2587ba08d40" kindref="member">MaaStatus_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="37" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6ad675ca7fe058998743ec8d99c72a914e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6ad675ca7fe058998743ec8d99c72a914e" kindref="member">MaaStatus_Pending</ref><sp/>=<sp/>1000,</highlight></codeline>
+<codeline lineno="38" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a05c689d4235e1214eab9abaf7cd6809b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a05c689d4235e1214eab9abaf7cd6809b" kindref="member">MaaStatus_Running</ref><sp/>=<sp/>2000,</highlight></codeline>
+<codeline lineno="39" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a26dc49974c883868a557aa9d7a5d23ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a26dc49974c883868a557aa9d7a5d23ee" kindref="member">MaaStatus_Success</ref><sp/>=<sp/>3000,</highlight></codeline>
+<codeline lineno="40" refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a341c204f14050eb7dc068032ee9eaf63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a92a321c9e89a79ab64dc5176057d76a6a341c204f14050eb7dc068032ee9eaf63" kindref="member">MaaStatus_Failed</ref><sp/>=<sp/>4000,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MaaStatus_Timeout<sp/>=<sp/>5000,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43" refid="MaaDef_8h_1af8447ae4ab37f4c740d287a6697d2b72" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1af8447ae4ab37f4c740d287a6697d2b72" kindref="member">MaaLoggingLevel</ref>;</highlight></codeline>
+<codeline lineno="44" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9" kindref="member">MaaLoggingLevelEunm</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a886d0c4c0b743640330ce103ef377f96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a886d0c4c0b743640330ce103ef377f96" kindref="member">MaaLoggingLevel_Off</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="47" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9aa3fa463a8d3ae69d4e6cd55e468a9b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9aa3fa463a8d3ae69d4e6cd55e468a9b0e" kindref="member">MaaLoggingLevel_Fatal</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="48" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a92f97dd39fafb12283ce88b4b2b1d191" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a92f97dd39fafb12283ce88b4b2b1d191" kindref="member">MaaLoggingLevel_Error</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="49" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9ab8ab1b9f82635c2f5ff28c7a9a1978cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9ab8ab1b9f82635c2f5ff28c7a9a1978cb" kindref="member">MaaLoggingLevel_Warn</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="50" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a58564e8e730e7bb829c2c177abed4c03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a58564e8e730e7bb829c2c177abed4c03" kindref="member">MaaLoggingLevel_Info</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="51" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a0de032c18e2fa9d3bc0ed24f534b3e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a0de032c18e2fa9d3bc0ed24f534b3e84" kindref="member">MaaLoggingLevel_Debug</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="52" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a3d13be5b9e5135ffff14f59cc3d7a827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a3d13be5b9e5135ffff14f59cc3d7a827" kindref="member">MaaLoggingLevel_Trace</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="53" refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a14f8e972156685897fa8fc5b2195a214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a56bc675130f000a275d4004f6b356ab9a14f8e972156685897fa8fc5b2195a214" kindref="member">MaaLoggingLevel_All</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref>;</highlight></codeline>
+<codeline lineno="57" refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref><sp/><ref refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kindref="member">MaaCtrlId</ref>;</highlight></codeline>
+<codeline lineno="58" refid="MaaDef_8h_1ac1f7514a514f2b5af32cabc02eedca85" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref><sp/><ref refid="MaaDef_8h_1ac1f7514a514f2b5af32cabc02eedca85" kindref="member">MaaResId</ref>;</highlight></codeline>
+<codeline lineno="59" refid="MaaDef_8h_1a711b3db9be6db60ae4cb09e3629e42f0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kindref="member">MaaId</ref><sp/><ref refid="MaaDef_8h_1a711b3db9be6db60ae4cb09e3629e42f0" kindref="member">MaaTaskId</ref>;</highlight></codeline>
+<codeline lineno="60" refid="MaaDef_8h_1a1b93c853d770a6723301f135d9e9e3bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaInvalidId<sp/>((MaaId)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref>;</highlight></codeline>
+<codeline lineno="63" refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" kindref="member">MaaOptionValue</ref>;</highlight></codeline>
+<codeline lineno="64" refid="MaaDef_8h_1a56ff604006917171af8e4b4974db28ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="MaaDef_8h_1a56ff604006917171af8e4b4974db28ef" kindref="member">MaaOptionValueSize</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="MaaDef_8h_1a78a454cf5bf3e18aab3aef29cfc7b91c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref><sp/><ref refid="MaaDef_8h_1a78a454cf5bf3e18aab3aef29cfc7b91c" kindref="member">MaaGlobalOption</ref>;</highlight></codeline>
+<codeline lineno="67" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38ee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38ee" kindref="member">MaaGlobalOptionEnum</ref></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf81992513d077ca4fe38f7ae787695cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf81992513d077ca4fe38f7ae787695cd" kindref="member">MaaGlobalOption_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea8669cc4382b1f28ea428aff511029b5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea8669cc4382b1f28ea428aff511029b5c" kindref="member">MaaGlobalOption_LogDir</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaaf9faa9621c830f79ba687467a3d9c5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaaf9faa9621c830f79ba687467a3d9c5a" kindref="member">MaaGlobalOption_SaveDraw</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf316c8e11fd054dfe965b904e3ce93b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eeaf316c8e11fd054dfe965b904e3ce93b4" kindref="member">MaaGlobalOption_Recording</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea58ba5999f483b497af3eac6d327d53e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea58ba5999f483b497af3eac6d327d53e6" kindref="member">MaaGlobalOption_StdoutLevel</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea1a175dc6811ec0aedb23b87b98d68b40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38eea1a175dc6811ec0aedb23b87b98d68b40" kindref="member">MaaGlobalOption_ShowHitDraw</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="MaaDef_8h_1a96a661c5a0739f3238d192949635b7f7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref><sp/><ref refid="MaaDef_8h_1a96a661c5a0739f3238d192949635b7f7" kindref="member">MaaResOption</ref>;</highlight></codeline>
+<codeline lineno="100" refid="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116" kindref="member">MaaResOptionEnum</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102" refid="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116afdc31dbaaa6b035f11b40cd574165f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a9aa211dbcabe90cacd0c94ea6a03d116afdc31dbaaa6b035f11b40cd574165f8e" kindref="member">MaaResOption_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="MaaDef_8h_1af8335ffd5a7df65830402c82a396c94e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref><sp/><ref refid="MaaDef_8h_1af8335ffd5a7df65830402c82a396c94e" kindref="member">MaaCtrlOption</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003" kindref="member">MaaCtrlOptionEnum</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a4afeb097dfa70801c8fa43d83bb5c51f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a4afeb097dfa70801c8fa43d83bb5c51f" kindref="member">MaaCtrlOption_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a83157be6a22a5e62d4929c7bcd095f75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a83157be6a22a5e62d4929c7bcd095f75" kindref="member">MaaCtrlOption_ScreenshotTargetLongSide</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3" kindref="member">MaaCtrlOption_ScreenshotTargetShortSide</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb" kindref="member">MaaCtrlOption_DefaultAppPackageEntry</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8" kindref="member">MaaCtrlOption_DefaultAppPackage</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a" kindref="member">MaaCtrlOption_Recording</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="MaaDef_8h_1abb0751f599cf40a8b1477865fef28165" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kindref="member">MaaOption</ref><sp/><ref refid="MaaDef_8h_1abb0751f599cf40a8b1477865fef28165" kindref="member">MaaInstOption</ref>;</highlight></codeline>
+<codeline lineno="144" refid="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8" kindref="member">MaaInstOptionEnum</ref></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146" refid="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8ad2dc9015f1a66ca5803d998bed0a1b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ab952a7ded035c3f362c35f11752504c8ad2dc9015f1a66ca5803d998bed0a1b90" kindref="member">MaaInstOption_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="MaaDef_8h_1ae77fe3e2413b89e08d7cae72f4c6320d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaTaskParam_Empty<sp/>&quot;{}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="MaaDef_8h_1a2ba314321c0419e64efe128e94c20776" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1a2ba314321c0419e64efe128e94c20776" kindref="member">MaaAdbControllerType</ref>;</highlight></codeline>
+<codeline lineno="152" refid="MaaDef_8h_1a810fc320b7071d4aafd96a4df49052a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaAdbControllerType_Touch_Mask<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="MaaDef_8h_1a0aba12231a057e024b6f886d5ca57e42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaAdbControllerType_Key_Mask<sp/>0xFF00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="MaaDef_8h_1a60c0e9e60c279369555268de16d8f9c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaAdbControllerType_Screencap_Mask<sp/>0xFF0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47" kindref="member">MaaAdbControllerTypeEnum</ref></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a3d59492c4b3ea45670b9ee310c8885cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a3d59492c4b3ea45670b9ee310c8885cc" kindref="member">MaaAdbControllerType_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2108c7bcf252bb64b6462aa5f09f7ae0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2108c7bcf252bb64b6462aa5f09f7ae0" kindref="member">MaaAdbControllerType_Touch_Adb</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="173" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a38213a5995142a9ca8f057e1ed985bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a38213a5995142a9ca8f057e1ed985bd1" kindref="member">MaaAdbControllerType_Touch_MiniTouch</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="174" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47adf8d2f14e385b73ca79ff57c81ca390f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47adf8d2f14e385b73ca79ff57c81ca390f" kindref="member">MaaAdbControllerType_Touch_MaaTouch</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="175" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ad05d0ac644b94fc434991d24f5e47c24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ad05d0ac644b94fc434991d24f5e47c24" kindref="member">MaaAdbControllerType_Touch_AutoDetect</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a810fc320b7071d4aafd96a4df49052a6" kindref="member">MaaAdbControllerType_Touch_Mask</ref><sp/>-<sp/>1,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2d60b8a3560c086a6fd3ffe7be112411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2d60b8a3560c086a6fd3ffe7be112411" kindref="member">MaaAdbControllerType_Key_Adb</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>8,</highlight></codeline>
+<codeline lineno="178" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a7f4048cdd05b342e1ab5691b9d367722" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a7f4048cdd05b342e1ab5691b9d367722" kindref="member">MaaAdbControllerType_Key_MaaTouch</ref><sp/>=<sp/>2<sp/>&lt;&lt;<sp/>8,</highlight></codeline>
+<codeline lineno="179" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a1deafc6cc3d4e512b0cd5158efa72c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a1deafc6cc3d4e512b0cd5158efa72c7a" kindref="member">MaaAdbControllerType_Key_AutoDetect</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a0aba12231a057e024b6f886d5ca57e42" kindref="member">MaaAdbControllerType_Key_Mask</ref><sp/>-<sp/>(1<sp/>&lt;&lt;<sp/>8),</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a59924f7760f923f7c3c0b32f328be842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a59924f7760f923f7c3c0b32f328be842" kindref="member">MaaAdbControllerType_Input_Preset_Adb</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2108c7bcf252bb64b6462aa5f09f7ae0" kindref="member">MaaAdbControllerType_Touch_Adb</ref><sp/>|<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2d60b8a3560c086a6fd3ffe7be112411" kindref="member">MaaAdbControllerType_Key_Adb</ref>,</highlight></codeline>
+<codeline lineno="182" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a29acac3c28459b54743e7b20f577cafa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a29acac3c28459b54743e7b20f577cafa" kindref="member">MaaAdbControllerType_Input_Preset_Minitouch</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a38213a5995142a9ca8f057e1ed985bd1" kindref="member">MaaAdbControllerType_Touch_MiniTouch</ref><sp/>|<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a2d60b8a3560c086a6fd3ffe7be112411" kindref="member">MaaAdbControllerType_Key_Adb</ref>,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a876960f4dd9057a9c49a8347a4a206a5" kindref="member">MaaAdbControllerType_Input_Preset_Maatouch</ref><sp/>=</highlight></codeline>
+<codeline lineno="184" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a876960f4dd9057a9c49a8347a4a206a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47adf8d2f14e385b73ca79ff57c81ca390f" kindref="member">MaaAdbControllerType_Touch_MaaTouch</ref><sp/>|<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a7f4048cdd05b342e1ab5691b9d367722" kindref="member">MaaAdbControllerType_Key_MaaTouch</ref>,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a5f73e768699d6dcb9c1d5a77059af606" kindref="member">MaaAdbControllerType_Input_Preset_AutoDetect</ref><sp/>=</highlight></codeline>
+<codeline lineno="186" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a5f73e768699d6dcb9c1d5a77059af606" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ad05d0ac644b94fc434991d24f5e47c24" kindref="member">MaaAdbControllerType_Touch_AutoDetect</ref><sp/>|<sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a1deafc6cc3d4e512b0cd5158efa72c7a" kindref="member">MaaAdbControllerType_Key_AutoDetect</ref>,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac0c833f535e3c58d6efaba3ec0da41a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac0c833f535e3c58d6efaba3ec0da41a9" kindref="member">MaaAdbControllerType_Screencap_FastestWay_Compatible</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="190" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac8462950eca0594fc60c982c8734e876" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ac8462950eca0594fc60c982c8734e876" kindref="member">MaaAdbControllerType_Screencap_RawByNetcat</ref><sp/>=<sp/>2<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="191" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ade67275eb3d17cf1f015af70747c8b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ade67275eb3d17cf1f015af70747c8b90" kindref="member">MaaAdbControllerType_Screencap_RawWithGzip</ref><sp/>=<sp/>3<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="192" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a052277116be3e016132bb16642816439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a052277116be3e016132bb16642816439" kindref="member">MaaAdbControllerType_Screencap_Encode</ref><sp/>=<sp/>4<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="193" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a08444c4d9943abf244b4ce90fc25b2a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a08444c4d9943abf244b4ce90fc25b2a3" kindref="member">MaaAdbControllerType_Screencap_EncodeToFile</ref><sp/>=<sp/>5<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="194" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a11c059d2505bcc10bf44804afec2679b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a11c059d2505bcc10bf44804afec2679b" kindref="member">MaaAdbControllerType_Screencap_MinicapDirect</ref><sp/>=<sp/>6<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="195" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a015a23fecc81d30ecb4d1fa9d0b01643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a015a23fecc81d30ecb4d1fa9d0b01643" kindref="member">MaaAdbControllerType_Screencap_MinicapStream</ref><sp/>=<sp/>7<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="196" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a16ae77e49c0b8a191186e299b63cc3f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47a16ae77e49c0b8a191186e299b63cc3f4" kindref="member">MaaAdbControllerType_Screencap_FastestLosslessWay</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a60c0e9e60c279369555268de16d8f9c8" kindref="member">MaaAdbControllerType_Screencap_Mask</ref><sp/>-<sp/>(2<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="197" refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ae30111ce0fc2dc34a4d911928c1848fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a21de9ae05eae97a700f9f834fe506f47ae30111ce0fc2dc34a4d911928c1848fd" kindref="member">MaaAdbControllerType_Screencap_FastestWay</ref><sp/>=<sp/><ref refid="MaaDef_8h_1a60c0e9e60c279369555268de16d8f9c8" kindref="member">MaaAdbControllerType_Screencap_Mask</ref><sp/>-<sp/>(1<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="MaaDef_8h_1aff72391259f2cc9a58e94a2dece637e8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1aff72391259f2cc9a58e94a2dece637e8" kindref="member">MaaDbgControllerType</ref>;</highlight></codeline>
+<codeline lineno="201" refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6" kindref="member">MaaDbgControllerTypeEnum</ref></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203" refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a5e57e27bb1c791123d2728c3328c864d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a5e57e27bb1c791123d2728c3328c864d" kindref="member">MaaDbgController_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a8ae80556a7d8543a24f45147e691788b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a8ae80556a7d8543a24f45147e691788b" kindref="member">MaaDbgControllerType_CarouselImage</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="206" refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a35f420f73bc344a6a42a781dcfcceea6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1ac482d3b538b47fcc9d3f4a8608958fc6a35f420f73bc344a6a42a781dcfcceea6" kindref="member">MaaDbgControllerType_ReplayRecording</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="MaaDef_8h_1a6b455ee07566bef26f05bfce91017ca9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1a6b455ee07566bef26f05bfce91017ca9" kindref="member">MaaThriftControllerType</ref>;</highlight></codeline>
+<codeline lineno="210" refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9da" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9da" kindref="member">MaaThriftControllerTypeEnum</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212" refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa54c432b0c83e92461c4acb80e8045e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa54c432b0c83e92461c4acb80e8045e05" kindref="member">MaaThriftController_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa9c4f24dd98c6e1c84339d44ba880795c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daa9c4f24dd98c6e1c84339d44ba880795c" kindref="member">MaaThriftControllerType_Socket</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="215" refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daaf2861db948140dfd2b9b377c0d9534ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1a6035315f50c908ee7e23633ce53ac9daaf2861db948140dfd2b9b377c0d9534ab" kindref="member">MaaThriftControllerType_UnixDomainSocket</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="MaaDef_8h_1abdbcb048447e802ad2b48e7755b1776c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="MaaDef_8h_1abdbcb048447e802ad2b48e7755b1776c" kindref="member">MaaWin32ControllerType</ref>;</highlight></codeline>
+<codeline lineno="219" refid="MaaDef_8h_1af7ef816067f31da570d95a87a0a06506" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaWin32ControllerType_Touch_Mask<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="MaaDef_8h_1a0dcb911c9b2938e37cce89f794cf9edf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaWin32ControllerType_Key_Mask<sp/>0xFF00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="MaaDef_8h_1ae3c5ed765271da72f92ca79b20b7842c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MaaWin32ControllerType_Screencap_Mask<sp/>0xFF0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2" kindref="member">MaaWin32ControllerTypeEnum</ref></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a9c3233de7b124d4ada69d5e6f8270921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a9c3233de7b124d4ada69d5e6f8270921" kindref="member">MaaWin32Controller_Invalid</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a647d9761d06e8fb49d78ac49bb05afbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a647d9761d06e8fb49d78ac49bb05afbd" kindref="member">MaaWin32ControllerType_Touch_SendMessage</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a88f9fc7384298de423f1df17ff471417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a88f9fc7384298de423f1df17ff471417" kindref="member">MaaWin32ControllerType_Key_SendMessage</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>8,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2aed723981d356c9f6ad3beff4b96a9d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2aed723981d356c9f6ad3beff4b96a9d3c" kindref="member">MaaWin32ControllerType_Screencap_GDI</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="238" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a2cef83ab99d6116b517741e9e1724f2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a2cef83ab99d6116b517741e9e1724f2a" kindref="member">MaaWin32ControllerType_Screencap_DXGI_DesktopDup</ref><sp/>=<sp/>2<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MaaWin32ControllerType_Screencap_DXGI_BackBuffer<sp/>=<sp/>3<sp/>&lt;&lt;<sp/>16,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a8af6e4ac88c03d92e0376f67ee4a62b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MaaDef_8h_1aee6a3149d7be4c6d9e2190d14f203fa2a8af6e4ac88c03d92e0376f67ee4a62b6" kindref="member">MaaWin32ControllerType_Screencap_DXGI_FramePool</ref><sp/>=<sp/>4<sp/>&lt;&lt;<sp/>16,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="242" refid="MaaDef_8h_1a3da139ef5684ba4fab68e47797c0d50c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="MaaDef_8h_1a3da139ef5684ba4fab68e47797c0d50c" kindref="member">MaaWin32Hwnd</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" kindref="member">MaaTransparentArg</ref>;</highlight></codeline>
+<codeline lineno="245" refid="MaaDef_8h_1af61e880b2ec14e6ced517f2c7457a1b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" kindref="member">MaaTransparentArg</ref><sp/><ref refid="MaaDef_8h_1af61e880b2ec14e6ced517f2c7457a1b3" kindref="member">MaaCallbackTransparentArg</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref>)(<ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>msg,<sp/><ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref><sp/>details_json,<sp/><ref refid="MaaDef_8h_1a9138c89a52948abc61b4da64dbafe5a5" kindref="member">MaaTransparentArg</ref><sp/>callback_arg);</highlight></codeline>
+<codeline lineno="254" refid="MaaDef_8h_1af4bd0a409b4beff6c3ef2422f3e8b431" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref><sp/><ref refid="MaaDef_8h_1af4bd0a409b4beff6c3ef2422f3e8b431" kindref="member">MaaResourceCallback</ref>;</highlight></codeline>
+<codeline lineno="255" refid="MaaDef_8h_1a42e88ec9161f3484a20ee8cad7409fe5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref><sp/><ref refid="MaaDef_8h_1a42e88ec9161f3484a20ee8cad7409fe5" kindref="member">MaaControllerCallback</ref>;</highlight></codeline>
+<codeline lineno="256" refid="MaaDef_8h_1ab45bd56ec96933eb8737d6b9c0479656" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="MaaDef_8h_1a48aaee8a77c75875288cf3206d992958" kindref="member">MaaAPICallback</ref><sp/><ref refid="MaaDef_8h_1ab45bd56ec96933eb8737d6b9c0479656" kindref="member">MaaInstanceCallback</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomControllerAPI" kindref="compound">MaaCustomControllerAPI</ref>;</highlight></codeline>
+<codeline lineno="259" refid="MaaDef_8h_1ad08eb5199c33a7c772aacb62087617a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomControllerAPI" kindref="compound">MaaCustomControllerAPI</ref>*<sp/><ref refid="MaaDef_8h_1ad08eb5199c33a7c772aacb62087617a3" kindref="member">MaaCustomControllerHandle</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomRecognizerAPI" kindref="compound">MaaCustomRecognizerAPI</ref>;</highlight></codeline>
+<codeline lineno="262" refid="MaaDef_8h_1a3d04340b02063d25ea61500853fca1a0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomRecognizerAPI" kindref="compound">MaaCustomRecognizerAPI</ref>*<sp/><ref refid="MaaDef_8h_1a3d04340b02063d25ea61500853fca1a0" kindref="member">MaaCustomRecognizerHandle</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomActionAPI" kindref="compound">MaaCustomActionAPI</ref>;</highlight></codeline>
+<codeline lineno="265" refid="MaaDef_8h_1a4889d004e298d4fb969a7988dc65a55e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaCustomActionAPI" kindref="compound">MaaCustomActionAPI</ref>*<sp/><ref refid="MaaDef_8h_1a4889d004e298d4fb969a7988dc65a55e" kindref="member">MaaCustomActionHandle</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaSyncContextAPI;</highlight></codeline>
+<codeline lineno="268" refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MaaSyncContextAPI*<sp/><ref refid="MaaDef_8h_1adf83aed41c1cbbf6df19c6abb165c9e2" kindref="member">MaaSyncContextHandle</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="structMaaRect" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMaaRect" kindref="compound">MaaRect</ref></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="277" refid="structMaaRect_1a5cf5c0bb6cb3244ea7364e0e14ccf439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structMaaRect_1a5cf5c0bb6cb3244ea7364e0e14ccf439" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="278" refid="structMaaRect_1ad01ed70b06d17f552838eaa84447041c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structMaaRect_1ad01ed70b06d17f552838eaa84447041c" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="279" refid="structMaaRect_1a73e6dc516ec3103c7ac89d94eaa9550b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structMaaRect_1a73e6dc516ec3103c7ac89d94eaa9550b" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="280" refid="structMaaRect_1adfa84de77550a2afc6c92349f20e12cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structMaaRect_1adfa84de77550a2afc6c92349f20e12cc" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="281" refid="MaaDef_8h_1a00152c7eaccf612e460ea6872455f9cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>}*<sp/><ref refid="MaaDef_8h_1a00152c7eaccf612e460ea6872455f9cd" kindref="member">MaaRectHandle</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/MaaFramework/MaaDef.h"/>
+  </compounddef>
+</doxygen>
