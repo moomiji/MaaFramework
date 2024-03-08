@@ -59,6 +59,7 @@ jobs:
   ubuntu:
     needs: meta
     runs-on: ubuntu-latest
+    container: gcc:13
     strategy:
       matrix:
         arch: [aarch64, x86_64]
@@ -72,25 +73,19 @@ jobs:
       - name: Install deps
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y cmake ninja-build
+          sudo apt-get install -y cmake ninja-build python3
 
       - name: Install compiler
         if: ${{ matrix.arch == 'x86_64' }}
         run: |
-          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
           sudo apt-get update -y
           sudo apt-get install -y gcc-13 g++-13
 
       - name: Install cross compile toolchains
         if: ${{ matrix.arch == 'aarch64' }}
         run: |
-          echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" | sudo tee /etc/apt/sources.list.d/temporary-repository.list
           sudo apt-get update -y
-          sudo apt-get autoremove -y tzdata tzdata-java
-          sudo apt-get install -y chrony=4.3-2ubuntu1
           sudo apt-get install -y gcc-13-aarch64-linux-gnu g++-13-aarch64-linux-gnu
-          sudo rm /etc/apt/sources.list.d/temporary-repository.list
-          sudo apt-get update -y
 
       - name: Bootstrap MaaDeps
         env:
