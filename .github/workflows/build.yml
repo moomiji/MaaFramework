@@ -69,7 +69,7 @@ jobs:
       - name: Install actions deps
         run: |
           apt-get update -y
-          apt-get install -y git sudo add-apt-repository
+          apt-get install -y git sudo add-apt-repository python3
 
       - uses: actions/checkout@v3
         with:
