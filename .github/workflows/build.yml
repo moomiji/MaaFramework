@@ -72,20 +72,20 @@ jobs:
       
       - name: Install deps
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y cmake ninja-build python3
+          apt-get update -y
+          apt-get install -y cmake ninja-build python3
 
       - name: Install compiler
         if: ${{ matrix.arch == 'x86_64' }}
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y gcc-13 g++-13
+          apt-get update -y
+          apt-get install -y gcc-13 g++-13
 
       - name: Install cross compile toolchains
         if: ${{ matrix.arch == 'aarch64' }}
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y gcc-13-aarch64-linux-gnu g++-13-aarch64-linux-gnu
+          apt-get update -y
+          apt-get install -y gcc-13-aarch64-linux-gnu g++-13-aarch64-linux-gnu
 
       - name: Bootstrap MaaDeps
         env:
