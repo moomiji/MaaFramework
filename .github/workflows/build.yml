@@ -59,7 +59,7 @@ jobs:
   ubuntu:
     needs: meta
     runs-on: ubuntu-latest
-    container: gcc:13
+    container: ubuntu:24.04
     strategy:
       matrix:
         arch: [aarch64, x86_64]
@@ -72,20 +72,19 @@ jobs:
       
       - name: Install deps
         run: |
-          apt-get update -y
-          apt-get install -y cmake ninja-build python3
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+          sudo apt-get update -y
+          sudo apt-get install -y cmake ninja-build
 
       - name: Install compiler
         if: ${{ matrix.arch == 'x86_64' }}
         run: |
-          apt-get update -y
-          apt-get install -y gcc-13 g++-13
+          sudo apt-get install -y gcc-13 g++-13
 
       - name: Install cross compile toolchains
         if: ${{ matrix.arch == 'aarch64' }}
         run: |
-          apt-get update -y
-          apt-get install -y gcc-13-aarch64-linux-gnu g++-13-aarch64-linux-gnu
+          sudo apt-get install -y gcc-13-aarch64-linux-gnu g++-13-aarch64-linux-gnu
 
       - name: Bootstrap MaaDeps
         env:
