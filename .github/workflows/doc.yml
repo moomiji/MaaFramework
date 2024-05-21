@@ -8,11 +8,14 @@ on:
   workflow_dispatch:
 
 jobs:
+  meta:
+    uses: ./.github/workflows/meta.yml
 
   build:
+    needs: meta
     runs-on: ubuntu-latest
     env:
-      VERSION: ${{ github.ref_name }}
+      VERSION: ${{ needs.meta.outputs.tag }}
     permissions:
       contents: write
     steps:
@@ -31,3 +34,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs-gen/html
           publish_branch: gh-pages
+          commit_message: ${{ needs.meta.outputs.tag }}
