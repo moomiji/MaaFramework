@@ -92,7 +92,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>value</parametername>
+<parametername direction="in">value</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The option value. </para>
@@ -127,6 +127,8 @@
         <param>
           <type><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref></type>
           <declname>name</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> *</type>
@@ -168,10 +170,14 @@
         <param>
           <type><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref></type>
           <declname>name</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a7519e6a8329a32c8e3058c20ec74cda8" kindref="member">MaaRecoId</ref> *</type>
           <declname>reco_id</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref> *</type>
@@ -197,10 +203,14 @@
         <param>
           <type><ref refid="MaaDef_8h_1aed721aa4682b1241bc38d10f8c57a8cb" kindref="member">MaaStringBufferHandle</ref></type>
           <declname>entry</declname>
+          <briefdescription><para>[out] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1aeedbbed1bc17d1ffd80ff719a71cfed5" kindref="member">MaaNodeId</ref> *</type>
           <declname>node_id_list</declname>
+          <briefdescription><para>[in, out] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref> *</type>

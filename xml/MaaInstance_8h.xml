@@ -157,7 +157,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>value</parametername>
+<parametername direction="in">value</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The option value. </para>

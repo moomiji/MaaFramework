@@ -343,7 +343,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>value</parametername>
+<parametername direction="in">value</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The option value. </para>
@@ -393,7 +393,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername direction="out">buffer</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The buffer where the hash will be written to.</para>
@@ -435,7 +435,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername direction="out">buffer</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The buffer where the task list will be written to.</para>

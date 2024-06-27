@@ -462,7 +462,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>value</parametername>
+<parametername direction="in">value</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The option value. </para>
@@ -893,7 +893,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername direction="out">buffer</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The buffer that the image data will be stored in.</para>
@@ -935,7 +935,7 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername direction="out">buffer</parametername>
+<parametername>buffer</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The buffer that the UUID will be stored in.</para>

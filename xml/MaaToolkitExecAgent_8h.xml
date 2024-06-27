@@ -66,6 +66,8 @@
         <param>
           <type>const <ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> *</type>
           <declname>exec_params</declname>
+          <briefdescription><para>[in] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
@@ -137,6 +139,8 @@
         <param>
           <type>const <ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> *</type>
           <declname>exec_params</declname>
+          <briefdescription><para>[in] </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kindref="member">MaaSize</ref></type>
