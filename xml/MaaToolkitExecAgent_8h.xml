@@ -66,7 +66,7 @@
         <param>
           <type>const <ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> *</type>
           <declname>exec_params</declname>
-          <briefdescription><para>[array] </para>
+          <briefdescription><para>array </para>
 </briefdescription>
         </param>
         <param>
@@ -149,7 +149,7 @@
         <param>
           <type>const <ref refid="MaaDef_8h_1a579dacb9b82c4edce80efb25fb79c9f5" kindref="member">MaaStringView</ref> *</type>
           <declname>exec_params</declname>
-          <briefdescription><para>[array] </para>
+          <briefdescription><para>array </para>
 </briefdescription>
         </param>
         <param>

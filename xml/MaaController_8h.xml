@@ -434,7 +434,7 @@
         <param>
           <type><ref refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" kindref="member">MaaOptionValue</ref></type>
           <declname>value</declname>
-          <briefdescription><para>[byte array] </para>
+          <briefdescription><para>Maybe a byte array </para>
 </briefdescription>
         </param>
         <param>

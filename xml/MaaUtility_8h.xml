@@ -72,7 +72,7 @@
         <param>
           <type><ref refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" kindref="member">MaaOptionValue</ref></type>
           <declname>value</declname>
-          <briefdescription><para>[byte array] </para>
+          <briefdescription><para>Maybe a byte array </para>
 </briefdescription>
         </param>
         <param>
@@ -231,7 +231,7 @@
         <param>
           <type><ref refid="MaaDef_8h_1aeedbbed1bc17d1ffd80ff719a71cfed5" kindref="member">MaaNodeId</ref> *</type>
           <declname>node_id_list</declname>
-          <briefdescription><para>[array] </para>
+          <briefdescription><para>array </para>
 </briefdescription>
         </param>
         <param>
