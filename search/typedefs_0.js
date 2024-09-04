@@ -7,7 +7,7 @@ var searchData=
   ['maactrloption_4',['MaaCtrlOption',['../MaaDef_8h.html#af8335ffd5a7df65830402c82a396c94e',1,'MaaDef.h']]],
   ['maacustomactioncallback_5',['MaaCustomActionCallback',['../MaaDef_8h.html#adb83c93a70db0cd0e02ea999b488ab11',1,'MaaDef.h']]],
   ['maacustomrecognizercallback_6',['MaaCustomRecognizerCallback',['../MaaDef_8h.html#aa7430497e844175920ff35440297f39d',1,'MaaDef.h']]],
-  ['maadbgcontrollertype_7',['MaaDbgControllerType',['../MaaDef_8h.html#aff72391259f2cc9a58e94a2dece637e8',1,'MaaDef.h']]],
+  ['maadbgcontrollertype_7',['MaaDbgControllerType',['../MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4',1,'MaaDef.h']]],
   ['maaglobaloption_8',['MaaGlobalOption',['../MaaDef_8h.html#a78a454cf5bf3e18aab3aef29cfc7b91c',1,'MaaDef.h']]],
   ['maaid_9',['MaaId',['../MaaDef_8h.html#a9a764a8b46c0c97cbfe2d8e295d90e03',1,'MaaDef.h']]],
   ['maaimageencodeddata_10',['MaaImageEncodedData',['../MaaBuffer_8h.html#a968e001e4bea16b169d95e3e398250c2',1,'MaaBuffer.h']]],

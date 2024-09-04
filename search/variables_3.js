@@ -18,7 +18,7 @@ var searchData=
   ['maaadbscreencapmethod_5frawbynetcat_15',['MaaAdbScreencapMethod_RawByNetcat',['../MaaDef_8h.html#a60ce3598cf19f0d3445190b2db83cc06',1,'MaaDef.h']]],
   ['maaadbscreencapmethod_5frawwithgzip_16',['MaaAdbScreencapMethod_RawWithGzip',['../MaaDef_8h.html#a8fd6dc85572915ccc69872dd5d58627d',1,'MaaDef.h']]],
   ['maadbgcontrollertype_5fcarouselimage_17',['MaaDbgControllerType_CarouselImage',['../MaaDef_8h.html#aa764b4f1d36768f2a603b22952913adf',1,'MaaDef.h']]],
-  ['maadbgcontrollertype_5finvalid_18',['MaaDbgControllerType_Invalid',['../MaaDef_8h.html#a2dbf779d5170b0b83643edc18ca0a525',1,'MaaDef.h']]],
+  ['maadbgcontrollertype_5fnone_18',['MaaDbgControllerType_None',['../MaaDef_8h.html#ac9823282a09aa697d77df40fa9ab1660',1,'MaaDef.h']]],
   ['maadbgcontrollertype_5freplayrecording_19',['MaaDbgControllerType_ReplayRecording',['../MaaDef_8h.html#a18506634bdaae7d877753c98b66fed99',1,'MaaDef.h']]],
   ['maawin32inputmethod_5fnone_20',['MaaWin32InputMethod_None',['../MaaDef_8h.html#a8dc07dbe45cf14c497e8c5f4cf42e6fc',1,'MaaDef.h']]],
   ['maawin32inputmethod_5fseize_21',['MaaWin32InputMethod_Seize',['../MaaDef_8h.html#aad4c99d7afbba7fdd5861352dacee695',1,'MaaDef.h']]],

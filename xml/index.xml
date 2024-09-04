@@ -38,22 +38,22 @@
     <member refid="MaaController_8h_1a75a64cece9c63356a2214e40d7c324fc" kind="function"><name>MaaDbgControllerCreate</name></member>
     <member refid="MaaController_8h_1a497982481bf79e89bc457d8a6e5e7bed" kind="function"><name>MaaControllerDestroy</name></member>
     <member refid="MaaController_8h_1ac0247a25f33dfbc7bd3a0183a669aad3" kind="function"><name>MaaControllerSetOption</name></member>
-    <member refid="group__MaaControllerPostRequest_1ga08f41be1ab0845f494ad7357adac0336" kind="function"><name>MaaControllerPostConnection</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaaf0eb096930a8a9592b11baf918a5910" kind="function"><name>MaaControllerPostClick</name></member>
-    <member refid="group__MaaControllerPostRequest_1gab45ddcc66eede5ebd38fd5952427006d" kind="function"><name>MaaControllerPostSwipe</name></member>
-    <member refid="group__MaaControllerPostRequest_1gadb4730eb9c0d1f87575fda9248804dd8" kind="function"><name>MaaControllerPostPressKey</name></member>
-    <member refid="group__MaaControllerPostRequest_1gac7d6cae7d63684a3d6e78201fcca4b40" kind="function"><name>MaaControllerPostInputText</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaab01b6a21228d8e18a0733f481278148" kind="function"><name>MaaControllerPostStartApp</name></member>
-    <member refid="group__MaaControllerPostRequest_1ga1938a4f9df4fcb4c56aadd1ab5da7f3b" kind="function"><name>MaaControllerPostStopApp</name></member>
-    <member refid="group__MaaControllerPostRequest_1gad4b315ff1a1c5da834aa76b6651a9cb7" kind="function"><name>MaaControllerPostTouchDown</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaa6044d3df3b659994b845317d4e67ec7" kind="function"><name>MaaControllerPostTouchMove</name></member>
-    <member refid="group__MaaControllerPostRequest_1ga1131966cc2abcf3bf11d317413d4a529" kind="function"><name>MaaControllerPostTouchUp</name></member>
-    <member refid="group__MaaControllerPostRequest_1gad65392ee4028a2d8ba74d2fab960fb50" kind="function"><name>MaaControllerPostScreencap</name></member>
+    <member refid="MaaController_8h_1a08f41be1ab0845f494ad7357adac0336" kind="function"><name>MaaControllerPostConnection</name></member>
+    <member refid="MaaController_8h_1aaf0eb096930a8a9592b11baf918a5910" kind="function"><name>MaaControllerPostClick</name></member>
+    <member refid="MaaController_8h_1ab45ddcc66eede5ebd38fd5952427006d" kind="function"><name>MaaControllerPostSwipe</name></member>
+    <member refid="MaaController_8h_1adb4730eb9c0d1f87575fda9248804dd8" kind="function"><name>MaaControllerPostPressKey</name></member>
+    <member refid="MaaController_8h_1ac7d6cae7d63684a3d6e78201fcca4b40" kind="function"><name>MaaControllerPostInputText</name></member>
+    <member refid="MaaController_8h_1aab01b6a21228d8e18a0733f481278148" kind="function"><name>MaaControllerPostStartApp</name></member>
+    <member refid="MaaController_8h_1a1938a4f9df4fcb4c56aadd1ab5da7f3b" kind="function"><name>MaaControllerPostStopApp</name></member>
+    <member refid="MaaController_8h_1ad4b315ff1a1c5da834aa76b6651a9cb7" kind="function"><name>MaaControllerPostTouchDown</name></member>
+    <member refid="MaaController_8h_1aa6044d3df3b659994b845317d4e67ec7" kind="function"><name>MaaControllerPostTouchMove</name></member>
+    <member refid="MaaController_8h_1a1131966cc2abcf3bf11d317413d4a529" kind="function"><name>MaaControllerPostTouchUp</name></member>
+    <member refid="MaaController_8h_1ad65392ee4028a2d8ba74d2fab960fb50" kind="function"><name>MaaControllerPostScreencap</name></member>
     <member refid="MaaController_8h_1afb8528c818e4fd03c7493b7b013474ed" kind="function"><name>MaaControllerStatus</name></member>
     <member refid="MaaController_8h_1a67674de1a9a97550510068d7c9a5abd1" kind="function"><name>MaaControllerWait</name></member>
     <member refid="MaaController_8h_1a0066bfa64a73b16f82a5060bdef72982" kind="function"><name>MaaControllerConnected</name></member>
     <member refid="MaaController_8h_1a730b6f3a5048f143a83c22bb05aec583" kind="function"><name>MaaControllerCachedImage</name></member>
-    <member refid="MaaController_8h_1ad05a12dfbf9bcf4e4b9204736de6b68f" kind="function"><name>MaaControllerGetUUID</name></member>
+    <member refid="MaaController_8h_1a0d7b5199f257b233e79a062c0811b555" kind="function"><name>MaaControllerGetUuid</name></member>
   </compound>
   <compound refid="MaaCustomController_8h" kind="file"><name>MaaCustomController.h</name>
   </compound>
@@ -139,14 +139,14 @@
     <member refid="MaaDef_8h_1a7ce6a82a2484734da58c3c422d19a9b1a44343c1c73aabeacff9a9f91805a16aa" kind="enumvalue"><name>MaaTaskerOption_Invalid</name></member>
     <member refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kind="typedef"><name>MaaBool</name></member>
     <member refid="MaaDef_8h_1a72a89077c419a0fe586d68bde004d856" kind="typedef"><name>MaaSize</name></member>
-    <member refid="MaaDef_8h_1ada00e4de6b9b4dcae75ed50f4bcaeef5" kind="typedef"><name>MaaStatus</name></member>
-    <member refid="MaaDef_8h_1af8447ae4ab37f4c740d287a6697d2b72" kind="typedef"><name>MaaLoggingLevel</name></member>
     <member refid="MaaDef_8h_1a9a764a8b46c0c97cbfe2d8e295d90e03" kind="typedef"><name>MaaId</name></member>
     <member refid="MaaDef_8h_1aea6a27f8f45b661fda5c19b6062b656e" kind="typedef"><name>MaaCtrlId</name></member>
     <member refid="MaaDef_8h_1ac1f7514a514f2b5af32cabc02eedca85" kind="typedef"><name>MaaResId</name></member>
     <member refid="MaaDef_8h_1a711b3db9be6db60ae4cb09e3629e42f0" kind="typedef"><name>MaaTaskId</name></member>
     <member refid="MaaDef_8h_1a7519e6a8329a32c8e3058c20ec74cda8" kind="typedef"><name>MaaRecoId</name></member>
     <member refid="MaaDef_8h_1aeedbbed1bc17d1ffd80ff719a71cfed5" kind="typedef"><name>MaaNodeId</name></member>
+    <member refid="MaaDef_8h_1ada00e4de6b9b4dcae75ed50f4bcaeef5" kind="typedef"><name>MaaStatus</name></member>
+    <member refid="MaaDef_8h_1af8447ae4ab37f4c740d287a6697d2b72" kind="typedef"><name>MaaLoggingLevel</name></member>
     <member refid="MaaDef_8h_1abfd624a6cf1959968525f8088abdd772" kind="typedef"><name>MaaOption</name></member>
     <member refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" kind="typedef"><name>MaaOptionValue</name></member>
     <member refid="MaaDef_8h_1a56ff604006917171af8e4b4974db28ef" kind="typedef"><name>MaaOptionValueSize</name></member>
@@ -158,7 +158,7 @@
     <member refid="MaaDef_8h_1aa02386b09246fa0704ec371f80bb661f" kind="typedef"><name>MaaAdbInputMethod</name></member>
     <member refid="MaaDef_8h_1a23833339ba6406d680688350d27d37b3" kind="typedef"><name>MaaWin32ScreencapMethod</name></member>
     <member refid="MaaDef_8h_1a29af4457ff72b57b157a1d58d6d28878" kind="typedef"><name>MaaWin32InputMethod</name></member>
-    <member refid="MaaDef_8h_1aff72391259f2cc9a58e94a2dece637e8" kind="typedef"><name>MaaDbgControllerType</name></member>
+    <member refid="MaaDef_8h_1a7a7491d55c50840ccb1891ba9b7740c4" kind="typedef"><name>MaaDbgControllerType</name></member>
     <member refid="MaaDef_8h_1aa8191105b665bc8c02f0a78cebac71cd" kind="typedef"><name>MaaNotificationCallback</name></member>
     <member refid="MaaDef_8h_1aa7430497e844175920ff35440297f39d" kind="typedef"><name>MaaCustomRecognizerCallback</name></member>
     <member refid="MaaDef_8h_1adb83c93a70db0cd0e02ea999b488ab11" kind="typedef"><name>MaaCustomActionCallback</name></member>
@@ -186,7 +186,7 @@
     <member refid="MaaDef_8h_1a8dc07dbe45cf14c497e8c5f4cf42e6fc" kind="variable"><name>MaaWin32InputMethod_None</name></member>
     <member refid="MaaDef_8h_1aad4c99d7afbba7fdd5861352dacee695" kind="variable"><name>MaaWin32InputMethod_Seize</name></member>
     <member refid="MaaDef_8h_1a210b463bfe443577686aa46311346639" kind="variable"><name>MaaWin32InputMethod_SendMessage</name></member>
-    <member refid="MaaDef_8h_1a2dbf779d5170b0b83643edc18ca0a525" kind="variable"><name>MaaDbgControllerType_Invalid</name></member>
+    <member refid="MaaDef_8h_1ac9823282a09aa697d77df40fa9ab1660" kind="variable"><name>MaaDbgControllerType_None</name></member>
     <member refid="MaaDef_8h_1aa764b4f1d36768f2a603b22952913adf" kind="variable"><name>MaaDbgControllerType_CarouselImage</name></member>
     <member refid="MaaDef_8h_1a18506634bdaae7d877753c98b66fed99" kind="variable"><name>MaaDbgControllerType_ReplayRecording</name></member>
   </compound>
@@ -256,6 +256,7 @@
     <member refid="MaaBuffer_8h_1a34b4262d80c2d57824e9e2439499d79b" kind="function"><name>MaaImageBufferGetRawData</name></member>
     <member refid="MaaBuffer_8h_1af48c43988a77c4c4f579b28d9985a46c" kind="function"><name>MaaImageBufferWidth</name></member>
     <member refid="MaaBuffer_8h_1af77fa0ccca6f5fc881ccd37ed73ce30e" kind="function"><name>MaaImageBufferHeight</name></member>
+    <member refid="MaaBuffer_8h_1ae853448a1632c7e73ac1004a5b963d40" kind="function"><name>MaaImageBufferChannels</name></member>
     <member refid="MaaBuffer_8h_1a0987a5d84f007279c74cc6ee8e48b0db" kind="function"><name>MaaImageBufferType</name></member>
     <member refid="MaaBuffer_8h_1a264698059fd0819daa031ec80bc3be7a" kind="function"><name>MaaImageBufferSetRawData</name></member>
     <member refid="MaaBuffer_8h_1acdbc42bfeb973fed192a94152273fd85" kind="function"><name>MaaImageBufferGetEncoded</name></member>
@@ -311,19 +312,6 @@
   <compound refid="MaaToolkitAPI_8h" kind="file"><name>MaaToolkitAPI.h</name>
   </compound>
   <compound refid="MaaToolkitDef_8h" kind="file"><name>MaaToolkitDef.h</name>
-  </compound>
-  <compound refid="group__MaaControllerPostRequest" kind="group"><name>MaaControllerPostRequest</name>
-    <member refid="group__MaaControllerPostRequest_1ga08f41be1ab0845f494ad7357adac0336" kind="function"><name>MaaControllerPostConnection</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaaf0eb096930a8a9592b11baf918a5910" kind="function"><name>MaaControllerPostClick</name></member>
-    <member refid="group__MaaControllerPostRequest_1gab45ddcc66eede5ebd38fd5952427006d" kind="function"><name>MaaControllerPostSwipe</name></member>
-    <member refid="group__MaaControllerPostRequest_1gadb4730eb9c0d1f87575fda9248804dd8" kind="function"><name>MaaControllerPostPressKey</name></member>
-    <member refid="group__MaaControllerPostRequest_1gac7d6cae7d63684a3d6e78201fcca4b40" kind="function"><name>MaaControllerPostInputText</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaab01b6a21228d8e18a0733f481278148" kind="function"><name>MaaControllerPostStartApp</name></member>
-    <member refid="group__MaaControllerPostRequest_1ga1938a4f9df4fcb4c56aadd1ab5da7f3b" kind="function"><name>MaaControllerPostStopApp</name></member>
-    <member refid="group__MaaControllerPostRequest_1gad4b315ff1a1c5da834aa76b6651a9cb7" kind="function"><name>MaaControllerPostTouchDown</name></member>
-    <member refid="group__MaaControllerPostRequest_1gaa6044d3df3b659994b845317d4e67ec7" kind="function"><name>MaaControllerPostTouchMove</name></member>
-    <member refid="group__MaaControllerPostRequest_1ga1131966cc2abcf3bf11d317413d4a529" kind="function"><name>MaaControllerPostTouchUp</name></member>
-    <member refid="group__MaaControllerPostRequest_1gad65392ee4028a2d8ba74d2fab960fb50" kind="function"><name>MaaControllerPostScreencap</name></member>
   </compound>
   <compound refid="group__MaaMsg" kind="group"><name>MaaMsg</name>
     <member refid="group__MaaMsg_1gaa3024bb9d66c5a503e159d2643c5c239" kind="define"><name>MaaMsg_Resource_StartLoading</name></member>

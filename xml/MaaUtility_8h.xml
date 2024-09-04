@@ -49,16 +49,12 @@
         <argsstring>()</argsstring>
         <name>MaaVersion</name>
         <briefdescription>
-<para>Get the version of the framework. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>const char* </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/Utility/MaaUtility.h" line="27" column="34" declfile="include/MaaFramework/Utility/MaaUtility.h" declline="27" declcolumn="34"/>
+        <location file="include/MaaFramework/Utility/MaaUtility.h" line="22" column="34" declfile="include/MaaFramework/Utility/MaaUtility.h" declline="22" declcolumn="34"/>
       </memberdef>
       <memberdef kind="function" id="MaaUtility_8h_1a1dba15d9cc61cf339c434085738f873c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="MaaPort_8h_1a67006334d91d228121dbba7a8bf8fe05" kindref="member">MAA_FRAMEWORK_API</ref> <ref refid="MaaDef_8h_1a2f7289f2a8e07f48c6261b52a120cdf6" kindref="member">MaaBool</ref></type>
@@ -72,48 +68,30 @@
         <param>
           <type><ref refid="MaaDef_8h_1abb976599f915b1e04a9ff8bf7055bf81" kindref="member">MaaOptionValue</ref></type>
           <declname>value</declname>
+          <briefdescription><para>byte array, int*, char*, bool* </para>
+</briefdescription>
         </param>
         <param>
           <type><ref refid="MaaDef_8h_1a56ff604006917171af8e4b4974db28ef" kindref="member">MaaOptionValueSize</ref></type>
           <declname>val_size</declname>
         </param>
         <briefdescription>
-<para>Set options globally. </para>
         </briefdescription>
         <detaileddescription>
-<para>This function requires a given set of option keys and value types, otherwise this will fail. See <ref refid="MaaDef_8h_1ad09e62ec1fd03dadaf5fb009026c38ee" kindref="member">MaaGlobalOptionEnum</ref> for details.</para>
 <para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>key</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The option key. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
 <parameternamelist>
 <parametername direction="in">value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The option value. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>val_size</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The size of the option value. </para>
+<para></para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>MaaBool Whether the option is set successfully. </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/Utility/MaaUtility.h" line="40" column="31" declfile="include/MaaFramework/Utility/MaaUtility.h" declline="40" declcolumn="31"/>
+        <location file="include/MaaFramework/Utility/MaaUtility.h" line="27" column="31" declfile="include/MaaFramework/Utility/MaaUtility.h" declline="27" declcolumn="31"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
