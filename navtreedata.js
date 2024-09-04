@@ -28,7 +28,6 @@ var NAVTREE =
     [ "MaaFramework API Reference", "index.html", [
       [ "Introduction", "index.html#intro_sec", null ]
     ] ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -42,6 +41,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -54,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MaaAPI_8h.html",
-"MaaResource_8h.html#adfdabceac47b76b04bdb44228a94b4ce"
+"MaaUtility_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

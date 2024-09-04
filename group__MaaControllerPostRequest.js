@@ -1,14 +1,14 @@
 var group__MaaControllerPostRequest =
 [
-    [ "MaaControllerPostConnection", "group__MaaControllerPostRequest.html#ga76de3faeb3a1225181c9f0c2fa69182c", null ],
-    [ "MaaControllerPostClick", "group__MaaControllerPostRequest.html#ga9f0e5794d891682c03e40af5405b5669", null ],
-    [ "MaaControllerPostSwipe", "group__MaaControllerPostRequest.html#gaba6f10967118e3b8b7e31a19eda910b4", null ],
-    [ "MaaControllerPostPressKey", "group__MaaControllerPostRequest.html#ga010076a6743d469c82e6fa13c0468823", null ],
-    [ "MaaControllerPostInputText", "group__MaaControllerPostRequest.html#gafe85778045c6bd504edb6dc7e255520b", null ],
-    [ "MaaControllerPostStartApp", "group__MaaControllerPostRequest.html#gac87949c378aa1e844339af52104618a7", null ],
-    [ "MaaControllerPostStopApp", "group__MaaControllerPostRequest.html#gad68fb17094ed3da0f7a44c47b609b5fe", null ],
-    [ "MaaControllerPostTouchDown", "group__MaaControllerPostRequest.html#ga5d6c78c44e837f25dda1aa78ea5732a5", null ],
-    [ "MaaControllerPostTouchMove", "group__MaaControllerPostRequest.html#ga1336e4744d7c998543dbdba569d102de", null ],
-    [ "MaaControllerPostTouchUp", "group__MaaControllerPostRequest.html#gaee055ca7345c558b1ec4dcdd39c5bf77", null ],
-    [ "MaaControllerPostScreencap", "group__MaaControllerPostRequest.html#ga8b960a76d1a18d2c6cbcd698a748505a", null ]
+    [ "MaaControllerPostConnection", "group__MaaControllerPostRequest.html#ga08f41be1ab0845f494ad7357adac0336", null ],
+    [ "MaaControllerPostClick", "group__MaaControllerPostRequest.html#gaaf0eb096930a8a9592b11baf918a5910", null ],
+    [ "MaaControllerPostSwipe", "group__MaaControllerPostRequest.html#gab45ddcc66eede5ebd38fd5952427006d", null ],
+    [ "MaaControllerPostPressKey", "group__MaaControllerPostRequest.html#gadb4730eb9c0d1f87575fda9248804dd8", null ],
+    [ "MaaControllerPostInputText", "group__MaaControllerPostRequest.html#gac7d6cae7d63684a3d6e78201fcca4b40", null ],
+    [ "MaaControllerPostStartApp", "group__MaaControllerPostRequest.html#gaab01b6a21228d8e18a0733f481278148", null ],
+    [ "MaaControllerPostStopApp", "group__MaaControllerPostRequest.html#ga1938a4f9df4fcb4c56aadd1ab5da7f3b", null ],
+    [ "MaaControllerPostTouchDown", "group__MaaControllerPostRequest.html#gad4b315ff1a1c5da834aa76b6651a9cb7", null ],
+    [ "MaaControllerPostTouchMove", "group__MaaControllerPostRequest.html#gaa6044d3df3b659994b845317d4e67ec7", null ],
+    [ "MaaControllerPostTouchUp", "group__MaaControllerPostRequest.html#ga1131966cc2abcf3bf11d317413d4a529", null ],
+    [ "MaaControllerPostScreencap", "group__MaaControllerPostRequest.html#gad65392ee4028a2d8ba74d2fab960fb50", null ]
 ];

@@ -3,10 +3,9 @@
   <compounddef id="MaaToolkitAPI_8h" kind="file" language="C++">
     <compoundname>MaaToolkitAPI.h</compoundname>
     <includes refid="MaaToolkitDef_8h" local="yes">MaaToolkitDef.h</includes>
+    <includes refid="MaaToolkitAdbDevice_8h" local="yes">AdbDevice/MaaToolkitAdbDevice.h</includes>
     <includes refid="MaaToolkitConfig_8h" local="yes">Config/MaaToolkitConfig.h</includes>
-    <includes refid="MaaToolkitDevice_8h" local="yes">Device/MaaToolkitDevice.h</includes>
-    <includes refid="MaaToolkitExecAgent_8h" local="yes">ExecAgent/MaaToolkitExecAgent.h</includes>
-    <includes refid="MaaToolkitWin32Window_8h" local="yes">Win32/MaaToolkitWin32Window.h</includes>
+    <includes refid="MaaToolkitDesktopWindow_8h" local="yes">DesktopWindow/MaaToolkitDesktopWindow.h</includes>
     <incdepgraph>
       <node id="3">
         <label>MaaFramework/MaaDef.h</label>
@@ -16,25 +15,25 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>MaaPort.h</label>
         <link refid="MaaPort_8h"/>
       </node>
       <node id="6">
+        <label>AdbDevice/MaaToolkitAdbDevice.h</label>
+        <link refid="MaaToolkitAdbDevice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>Config/MaaToolkitConfig.h</label>
         <link refid="MaaToolkitConfig_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
-        <label>Device/MaaToolkitDevice.h</label>
-        <link refid="MaaToolkitDevice_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
       <node id="8">
-        <label>ExecAgent/MaaToolkitExecAgent.h</label>
-        <link refid="MaaToolkitExecAgent_8h"/>
+        <label>DesktopWindow/MaaToolkitDesktopWindow.h</label>
+        <link refid="MaaToolkitDesktopWindow_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
@@ -49,8 +48,6 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
       </node>
       <node id="2">
         <label>MaaToolkitDef.h</label>
@@ -58,13 +55,7 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>Win32/MaaToolkitWin32Window.h</label>
-        <link refid="MaaToolkitWin32Window_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
+      <node id="4">
         <label>stdint.h</label>
       </node>
     </incdepgraph>

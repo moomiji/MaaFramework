@@ -1,4 +1,30 @@
 var searchData=
 [
-  ['input_5ftext_0',['input_text',['../structMaaCustomControllerAPI.html#a644d6aacc523eb7a02309b8abe5fd77b',1,'MaaCustomControllerAPI']]]
+  ['maaadbinputmethod_5fadbshell_0',['MaaAdbInputMethod_AdbShell',['../MaaDef_8h.html#a8478b8c5cbb3cf371893c5a62bb23552',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5fall_1',['MaaAdbInputMethod_All',['../MaaDef_8h.html#a320e575154515205c2f1c0f244b48b12',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5fdefault_2',['MaaAdbInputMethod_Default',['../MaaDef_8h.html#af7d0d8a4ab1426226f745f2a75d6c5c4',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5femulatorextras_3',['MaaAdbInputMethod_EmulatorExtras',['../MaaDef_8h.html#a5873d6868d9f063b59f35b0eca6d1c6c',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5fmaatouch_4',['MaaAdbInputMethod_Maatouch',['../MaaDef_8h.html#ab59fc58f3ca8fffd3dac5ee5b05f3bab',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5fminitouchandadbkey_5',['MaaAdbInputMethod_MinitouchAndAdbKey',['../MaaDef_8h.html#aac66f44931fdf340ef7c1637227c2d26',1,'MaaDef.h']]],
+  ['maaadbinputmethod_5fnone_6',['MaaAdbInputMethod_None',['../MaaDef_8h.html#a74648cb6979d945196159385cfcd1868',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fall_7',['MaaAdbScreencapMethod_All',['../MaaDef_8h.html#ac3df8a26538c4ba755f1dfd18b00454e',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fdefault_8',['MaaAdbScreencapMethod_Default',['../MaaDef_8h.html#a9236f5b3e2509971ceece01c45c36cb2',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5femulatorextras_9',['MaaAdbScreencapMethod_EmulatorExtras',['../MaaDef_8h.html#a907f2e7811c73fe367462488f6db9d4d',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fencode_10',['MaaAdbScreencapMethod_Encode',['../MaaDef_8h.html#a738cd9b2bb3f4e4bcbc4d1dd28c54a76',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fencodetofileandpull_11',['MaaAdbScreencapMethod_EncodeToFileAndPull',['../MaaDef_8h.html#a2a2c9ba89115515884adb1b2f6872dc6',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fminicapdirect_12',['MaaAdbScreencapMethod_MinicapDirect',['../MaaDef_8h.html#a5f7a115ff5d935b637ed4d76aebf7ce3',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fminicapstream_13',['MaaAdbScreencapMethod_MinicapStream',['../MaaDef_8h.html#a6d7078a12d303d77db908db9989d98f2',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5fnone_14',['MaaAdbScreencapMethod_None',['../MaaDef_8h.html#afc5f89f2a1376d168f1148bf8b1b2a23',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5frawbynetcat_15',['MaaAdbScreencapMethod_RawByNetcat',['../MaaDef_8h.html#a60ce3598cf19f0d3445190b2db83cc06',1,'MaaDef.h']]],
+  ['maaadbscreencapmethod_5frawwithgzip_16',['MaaAdbScreencapMethod_RawWithGzip',['../MaaDef_8h.html#a8fd6dc85572915ccc69872dd5d58627d',1,'MaaDef.h']]],
+  ['maadbgcontrollertype_5fcarouselimage_17',['MaaDbgControllerType_CarouselImage',['../MaaDef_8h.html#aa764b4f1d36768f2a603b22952913adf',1,'MaaDef.h']]],
+  ['maadbgcontrollertype_5finvalid_18',['MaaDbgControllerType_Invalid',['../MaaDef_8h.html#a2dbf779d5170b0b83643edc18ca0a525',1,'MaaDef.h']]],
+  ['maadbgcontrollertype_5freplayrecording_19',['MaaDbgControllerType_ReplayRecording',['../MaaDef_8h.html#a18506634bdaae7d877753c98b66fed99',1,'MaaDef.h']]],
+  ['maawin32inputmethod_5fnone_20',['MaaWin32InputMethod_None',['../MaaDef_8h.html#a8dc07dbe45cf14c497e8c5f4cf42e6fc',1,'MaaDef.h']]],
+  ['maawin32inputmethod_5fseize_21',['MaaWin32InputMethod_Seize',['../MaaDef_8h.html#aad4c99d7afbba7fdd5861352dacee695',1,'MaaDef.h']]],
+  ['maawin32inputmethod_5fsendmessage_22',['MaaWin32InputMethod_SendMessage',['../MaaDef_8h.html#a210b463bfe443577686aa46311346639',1,'MaaDef.h']]],
+  ['maawin32screencapmethod_5fdxgi_5fdesktopdup_23',['MaaWin32ScreencapMethod_DXGI_DesktopDup',['../MaaDef_8h.html#a21106da541cf447ad061f80287ee5272',1,'MaaDef.h']]],
+  ['maawin32screencapmethod_5fframepool_24',['MaaWin32ScreencapMethod_FramePool',['../MaaDef_8h.html#a09dce643a72de849a0caf2b1d83cce59',1,'MaaDef.h']]],
+  ['maawin32screencapmethod_5fgdi_25',['MaaWin32ScreencapMethod_GDI',['../MaaDef_8h.html#a7b02e137dc485a8baf003069d975f5f8',1,'MaaDef.h']]],
+  ['maawin32screencapmethod_5fnone_26',['MaaWin32ScreencapMethod_None',['../MaaDef_8h.html#a6a6f3a31d0b753183e9f76804aece85d',1,'MaaDef.h']]]
 ];
