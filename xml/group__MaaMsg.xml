@@ -58,8 +58,8 @@
         </inbodydescription>
         <location file="include/MaaFramework/MaaMsg.h" line="90" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="90" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1ga9d6746462bb9fd45de31b36677e868cf" prot="public" static="no">
-        <name>MaaMsg_Controller_completed</name>
+      <memberdef kind="define" id="group__MaaMsg_1ga2c85f0e2bf5a165fa70b830a84dbd841" prot="public" static="no">
+        <name>MaaMsg_Controller_Action_Completed</name>
         <initializer>(&quot;Controller.Action.Completed&quot;)</initializer>
         <briefdescription>
 <para>Message for the controller actions. </para>
@@ -86,9 +86,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="define" id="group__MaaMsg_1gab762c1e9250346d64325da9396064ee1" prot="public" static="no">
-        <name>MaaMsg_Tasker_Task_Started</name>
-        <initializer>(&quot;Tasker.Task.Started&quot;)</initializer>
+      <memberdef kind="define" id="group__MaaMsg_1gaac37aa21e6550be0254aca029b7cee82" prot="public" static="no">
+        <name>MaaMsg_Task_Started</name>
+        <initializer>(&quot;Task.Started&quot;)</initializer>
         <briefdescription>
 <para>Message for the tasks. </para>
         </briefdescription>
@@ -99,9 +99,9 @@
         </inbodydescription>
         <location file="include/MaaFramework/MaaMsg.h" line="107" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="107" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1gadfd24dc575e1e4fda1ef28229b1eb930" prot="public" static="no">
-        <name>MaaMsg_Tasker_Task_Completed</name>
-        <initializer>(&quot;Tasker.Task.Completed&quot;)</initializer>
+      <memberdef kind="define" id="group__MaaMsg_1gafd58ee3c4b8b8da9ac6ad5498bef0f88" prot="public" static="no">
+        <name>MaaMsg_Task_Completed</name>
+        <initializer>(&quot;Task.Completed&quot;)</initializer>
         <briefdescription>
 <para>Message for the tasks. </para>
         </briefdescription>
@@ -112,9 +112,9 @@
         </inbodydescription>
         <location file="include/MaaFramework/MaaMsg.h" line="108" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="108" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1ga68a45b9c98c9dc65e38bd7834819ae1b" prot="public" static="no">
-        <name>MaaMsg_Tasker_Task_Failed</name>
-        <initializer>(&quot;Tasker.Task.Failed&quot;)</initializer>
+      <memberdef kind="define" id="group__MaaMsg_1ga0791559f07816fb5ba5ae1eb3dd4882c" prot="public" static="no">
+        <name>MaaMsg_Task_Failed</name>
+        <initializer>(&quot;Task.Failed&quot;)</initializer>
         <briefdescription>
 <para>Message for the tasks. </para>
         </briefdescription>
@@ -127,113 +127,85 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="define" id="group__MaaMsg_1gaf15fc35715ddc0b94fe62ece5b1d8094" prot="public" static="no">
-        <name>MaaMsg_Task_Debug_RecognitionResult</name>
-        <initializer>(&quot;Task.Debug.RecognitionResult&quot;)</initializer>
-        <briefdescription>
-<para>Message for the recognition. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, recognition: { reco_id: number, name: string, box: [number, number, number, number], // If not recognized, it is null detail: any, } } </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="131" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="131" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1ga6524978f0790bfb73c7d8ed4490f8c87" prot="public" static="no">
-        <name>MaaMsg_Task_Debug_Hit</name>
-        <initializer>(&quot;Task.Debug.Hit&quot;)</initializer>
-        <briefdescription>
-<para>Message for the recognition. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, recognition: { reco_id: number, name: string, box: [number, number, number, number], // If not recognized, it is null detail: any, } } </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="132" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="132" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
       <memberdef kind="define" id="group__MaaMsg_1ga5fae13764cd64d02e50e2ea21c08db05" prot="public" static="no">
         <name>MaaMsg_Task_Focus_ReadyToRun</name>
         <initializer>(&quot;Task.Focus.ReadyToRun&quot;)</initializer>
         <briefdescription>
-<para>Message for the recognition. </para>
+<para>Message for the task focus. </para>
         </briefdescription>
         <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, node: { node_id: number, name: string, reco_id: number, times: number, completed: boolean, } } </para>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="155" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="155" bodyend="-1"/>
+        <location file="include/MaaFramework/MaaMsg.h" line="133" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MaaMsg_1gad180c69ed0a23324c79e3d49ed37b9e0" prot="public" static="no">
+        <name>MaaMsg_Task_Focus_Runout</name>
+        <initializer>(&quot;Task.Focus.Runout&quot;)</initializer>
+        <briefdescription>
+<para>Message for the task focus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaMsg.h" line="134" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__MaaMsg_1ga23a6ec2e8b32bff7931851e99d43a5d1" prot="public" static="no">
         <name>MaaMsg_Task_Focus_Completed</name>
         <initializer>(&quot;Task.Focus.Completed&quot;)</initializer>
         <briefdescription>
-<para>Message for the recognition. </para>
+<para>Message for the task focus. </para>
         </briefdescription>
         <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, node: { node_id: number, name: string, reco_id: number, times: number, completed: boolean, } } </para>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="156" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="156" bodyend="-1"/>
+        <location file="include/MaaFramework/MaaMsg.h" line="135" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="135" bodyend="-1"/>
       </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
       <memberdef kind="define" id="group__MaaMsg_1gaa0762d87ae7d2c3a96b618554e0f71ad" prot="public" static="no">
         <name>MaaMsg_Task_Debug_ReadyToRun</name>
         <initializer>(&quot;Task.Debug.ReadyToRun&quot;)</initializer>
         <briefdescription>
-<para>Message for the recognition. </para>
+<para>Message for debug. </para>
         </briefdescription>
         <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, node: { node_id: number, name: string, reco_id: number, times: number, completed: boolean, } } </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="158" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="158" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1ga8ac3f166c3470926524cd491a1986e4d" prot="public" static="no">
-        <name>MaaMsg_Task_Debug_Completed</name>
-        <initializer>(&quot;Task.Debug.Completed&quot;)</initializer>
-        <briefdescription>
-<para>Message for the recognition. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, node: { node_id: number, name: string, reco_id: number, times: number, completed: boolean, } } </para>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/MaaFramework/MaaMsg.h" line="159" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="159" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="user-defined">
-      <memberdef kind="define" id="group__MaaMsg_1ga03f726d7fbc29adee70c1e201d203767" prot="public" static="no">
-        <name>MaaMsg_Task_Debug_ListToRecognize</name>
-        <initializer>(&quot;Task.Debug.ListToRecognize&quot;)</initializer>
+      <memberdef kind="define" id="group__MaaMsg_1ga5470d34ff8324a0d4ed2eb6420794e1c" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_Runout</name>
+        <initializer>(&quot;Task.Debug.Runout&quot;)</initializer>
         <briefdescription>
-<para>Message for the task focus. </para>
+<para>Message for debug. </para>
         </briefdescription>
         <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, list: [string], } </para>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="175" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="175" bodyend="-1"/>
+        <location file="include/MaaFramework/MaaMsg.h" line="160" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="160" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="group__MaaMsg_1gab62f9c5f30afac3f1092db934ab1d67b" prot="public" static="no">
-        <name>MaaMsg_Task_Debug_MissAll</name>
-        <initializer>(&quot;Task.Debug.MissAll&quot;)</initializer>
+      <memberdef kind="define" id="group__MaaMsg_1ga8ac3f166c3470926524cd491a1986e4d" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_Completed</name>
+        <initializer>(&quot;Task.Debug.Completed&quot;)</initializer>
         <briefdescription>
-<para>Message for the task focus. </para>
+<para>Message for debug. </para>
         </briefdescription>
         <detaileddescription>
-<para>payload: { task_id: number, entry: string, uuid: string, hash: string, current: string, list: [string], } </para>
+<para>payload: { task_id: number, entry: string, uuid: string, hash: string, pre_hit_task: string, name: string, recognition: { id: number, box: [number, number, number, number], detail: string, hit: boolean, }, node_id: number, status: number, } </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/MaaFramework/MaaMsg.h" line="176" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="176" bodyend="-1"/>
+        <location file="include/MaaFramework/MaaMsg.h" line="161" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -364,6 +336,50 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/MaaFramework/MaaMsg.h" line="80" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MaaMsg_1ga03f726d7fbc29adee70c1e201d203767" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_ListToRecognize</name>
+        <initializer>(&quot;Task.Debug.ListToRecognize&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaMsg.h" line="164" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MaaMsg_1gaf15fc35715ddc0b94fe62ece5b1d8094" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_RecognitionResult</name>
+        <initializer>(&quot;Task.Debug.RecognitionResult&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaMsg.h" line="165" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MaaMsg_1ga6524978f0790bfb73c7d8ed4490f8c87" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_Hit</name>
+        <initializer>(&quot;Task.Debug.Hit&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaMsg.h" line="166" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__MaaMsg_1gab62f9c5f30afac3f1092db934ab1d67b" prot="public" static="no">
+        <name>MaaMsg_Task_Debug_MissAll</name>
+        <initializer>(&quot;Task.Debug.MissAll&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/MaaFramework/MaaMsg.h" line="167" column="9" bodyfile="include/MaaFramework/MaaMsg.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
 {text:"Modules",url:"modules.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
@@ -37,9 +38,10 @@ var menudata={children:[
 {text:"m",url:"globals.html#index_m"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"m",url:"globals_func.html#index_m"}]},
-{text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
+{text:"Typedefs",url:"globals_type.html",children:[
+{text:"m",url:"globals_type.html#index_m"}]},
 {text:"Enumerations",url:"globals_enum.html"},
-{text:"Enumerator",url:"globals_eval.html"},
+{text:"Enumerator",url:"globals_eval.html",children:[
+{text:"m",url:"globals_eval.html#index_m"}]},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"m",url:"globals_defs.html#index_m"}]}]}]}]}

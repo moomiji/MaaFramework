@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['height_0',['height',['../structMaaRect.html#adfa84de77550a2afc6c92349f20e12cc',1,'MaaRect']]]
+  ['click_0',['click',['../structMaaCustomControllerAPI.html#a6242f8f5fb8b1470cdcf3d9f569910f5',1,'MaaCustomControllerAPI']]],
+  ['connect_1',['connect',['../structMaaCustomControllerAPI.html#a545404acee64c7ed5536c82afb659efd',1,'MaaCustomControllerAPI']]],
+  ['controller_20requests_2',['Controller Requests',['../group__MaaControllerPostRequest.html',1,'']]]
 ];

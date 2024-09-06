@@ -1,5 +1,7 @@
 var annotated_dup =
 [
-    [ "MaaCustomControllerCallbacks", "structMaaCustomControllerCallbacks.html", "structMaaCustomControllerCallbacks" ],
+    [ "MaaCustomActionAPI", "structMaaCustomActionAPI.html", "structMaaCustomActionAPI" ],
+    [ "MaaCustomControllerAPI", "structMaaCustomControllerAPI.html", "structMaaCustomControllerAPI" ],
+    [ "MaaCustomRecognizerAPI", "structMaaCustomRecognizerAPI.html", "structMaaCustomRecognizerAPI" ],
     [ "MaaRect", "structMaaRect.html", "structMaaRect" ]
 ];
