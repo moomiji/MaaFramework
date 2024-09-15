@@ -37,8 +37,8 @@ var menudata={children:[
 {text:"m",url:"globals.html#index_m"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"m",url:"globals_func.html#index_m"}]},
-{text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
+{text:"Typedefs",url:"globals_type.html",children:[
+{text:"m",url:"globals_type.html#index_m"}]},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html"},
 {text:"Macros",url:"globals_defs.html",children:[

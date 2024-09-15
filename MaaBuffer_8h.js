@@ -36,7 +36,7 @@ var MaaBuffer_8h =
     [ "MaaImageListBufferIsEmpty", "MaaBuffer_8h.html#a7ce8c531e32d570b8c135c291fce9069", null ],
     [ "MaaImageListBufferSize", "MaaBuffer_8h.html#a8ecfbee12a38ae81af4736a9b7122a44", null ],
     [ "MaaImageListBufferAt", "MaaBuffer_8h.html#a4254ed0486833131c904d4a1ea572035", null ],
-    [ "MaaImageListBufferAppend", "MaaBuffer_8h.html#a08f9201db9fc1e0bc429fc27a16b7335", null ],
+    [ "MaaImageListBufferAppend", "MaaBuffer_8h.html#a388553fdf4e386f70bba3d06eaef3fee", null ],
     [ "MaaImageListBufferRemove", "MaaBuffer_8h.html#ab0c5beb1f17b944dd1d5ae1a2e9c55fe", null ],
     [ "MaaImageListBufferClear", "MaaBuffer_8h.html#acf243ee35644284fb8bd9bf024d32cd6", null ],
     [ "MaaRectCreate", "MaaBuffer_8h.html#a7ce60f072394b69766241f639385c204", null ],

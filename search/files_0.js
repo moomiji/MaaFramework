@@ -15,5 +15,6 @@ var searchData=
   ['maatoolkitconfig_2eh_12',['MaaToolkitConfig.h',['../MaaToolkitConfig_8h.html',1,'']]],
   ['maatoolkitdef_2eh_13',['MaaToolkitDef.h',['../MaaToolkitDef_8h.html',1,'']]],
   ['maatoolkitdesktopwindow_2eh_14',['MaaToolkitDesktopWindow.h',['../MaaToolkitDesktopWindow_8h.html',1,'']]],
-  ['maautility_2eh_15',['MaaUtility.h',['../MaaUtility_8h.html',1,'']]]
+  ['maatoolkitprojectinterface_2eh_15',['MaaToolkitProjectInterface.h',['../MaaToolkitProjectInterface_8h.html',1,'']]],
+  ['maautility_2eh_16',['MaaUtility.h',['../MaaUtility_8h.html',1,'']]]
 ];

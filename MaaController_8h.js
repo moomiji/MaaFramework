@@ -1,5 +1,6 @@
 var MaaController_8h =
 [
+    [ "MaaCustomControllerCallbacks", "MaaController_8h.html#a22203468df2e11d45892a524d48404a4", null ],
     [ "MaaAdbControllerCreate", "MaaController_8h.html#a7e54ebbb5215362bcdfbcc74748aaa0f", null ],
     [ "MaaWin32ControllerCreate", "MaaController_8h.html#a3dcbf450b265456d81fdef206f6c661a", null ],
     [ "MaaCustomControllerCreate", "MaaController_8h.html#a42b27ad97c7038a84fdade74627815ba", null ],

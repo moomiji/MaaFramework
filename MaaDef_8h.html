@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Maa Framework<span id="projectnumber">&#160;(dev) v0.4.0-beta.3-post.929-ci.10733222678</span>
+   <div id="projectname">Maa Framework<span id="projectnumber">&#160;(main) v0.4.0-beta.3-post.944-ci.10868824295</span>
    </div>
    <div id="projectbrief">A automation black-box testing framework based on image recognition.</div>
   </td>
@@ -95,8 +95,7 @@ $(document).ready(function(){initNavTree('MaaDef_8h.html',''); initResizable(); 
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">MaaDef.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -115,10 +114,64 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9eddd2fb954b055dd2ea4d9cdd267188" id="r_a9eddd2fb954b055dd2ea4d9cdd267188"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a9eddd2fb954b055dd2ea4d9cdd267188">MaaNullSize</a>&#160;&#160;&#160;((<a class="el" href="MaaDef_8h.html#a72a89077c419a0fe586d68bde004d856">MaaSize</a>)-1)</td></tr>
+<tr class="memitem:a9eddd2fb954b055dd2ea4d9cdd267188" id="r_a9eddd2fb954b055dd2ea4d9cdd267188"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a9eddd2fb954b055dd2ea4d9cdd267188">MaaNullSize</a>&#160;&#160;&#160;UINT64_MAX</td></tr>
 <tr class="separator:a9eddd2fb954b055dd2ea4d9cdd267188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b93c853d770a6723301f135d9e9e3bc" id="r_a1b93c853d770a6723301f135d9e9e3bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a1b93c853d770a6723301f135d9e9e3bc">MaaInvalidId</a>&#160;&#160;&#160;((<a class="el" href="MaaDef_8h.html#a9a764a8b46c0c97cbfe2d8e295d90e03">MaaId</a>)0)</td></tr>
 <tr class="separator:a1b93c853d770a6723301f135d9e9e3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3df932dcfe5f836a7e98f0ebef2cf83" id="r_ad3df932dcfe5f836a7e98f0ebef2cf83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ad3df932dcfe5f836a7e98f0ebef2cf83">MaaAdbScreencapMethod_None</a>&#160;&#160;&#160;0ULL</td></tr>
+<tr class="separator:ad3df932dcfe5f836a7e98f0ebef2cf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5cc89306598105a8cee7580867bc35" id="r_aba5cc89306598105a8cee7580867bc35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aba5cc89306598105a8cee7580867bc35">MaaAdbScreencapMethod_EncodeToFileAndPull</a>&#160;&#160;&#160;1ULL</td></tr>
+<tr class="separator:aba5cc89306598105a8cee7580867bc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dc561558d3344586b97b208ca466eb" id="r_a64dc561558d3344586b97b208ca466eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a64dc561558d3344586b97b208ca466eb">MaaAdbScreencapMethod_Encode</a>&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td></tr>
+<tr class="separator:a64dc561558d3344586b97b208ca466eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a291483b888ab3e944818b33aeb98c9" id="r_a1a291483b888ab3e944818b33aeb98c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a1a291483b888ab3e944818b33aeb98c9">MaaAdbScreencapMethod_RawWithGzip</a>&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td></tr>
+<tr class="separator:a1a291483b888ab3e944818b33aeb98c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e3946d5d361f2571126016d41a2676" id="r_a94e3946d5d361f2571126016d41a2676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a94e3946d5d361f2571126016d41a2676">MaaAdbScreencapMethod_RawByNetcat</a>&#160;&#160;&#160;(1ULL &lt;&lt; 3)</td></tr>
+<tr class="separator:a94e3946d5d361f2571126016d41a2676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594d59b13a02d41b6a335e0f6575fca2" id="r_a594d59b13a02d41b6a335e0f6575fca2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a594d59b13a02d41b6a335e0f6575fca2">MaaAdbScreencapMethod_MinicapDirect</a>&#160;&#160;&#160;(1ULL &lt;&lt; 4)</td></tr>
+<tr class="separator:a594d59b13a02d41b6a335e0f6575fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81656785989eff6004704d5cc908552e" id="r_a81656785989eff6004704d5cc908552e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a81656785989eff6004704d5cc908552e">MaaAdbScreencapMethod_MinicapStream</a>&#160;&#160;&#160;(1ULL &lt;&lt; 5)</td></tr>
+<tr class="separator:a81656785989eff6004704d5cc908552e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c4f433547d52de1c93c3d01d58aed7" id="r_a55c4f433547d52de1c93c3d01d58aed7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a55c4f433547d52de1c93c3d01d58aed7">MaaAdbScreencapMethod_EmulatorExtras</a>&#160;&#160;&#160;(1ULL &lt;&lt; 6)</td></tr>
+<tr class="separator:a55c4f433547d52de1c93c3d01d58aed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004b0d855740e5d3894fd14d9e47d080" id="r_a004b0d855740e5d3894fd14d9e47d080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a004b0d855740e5d3894fd14d9e47d080">MaaAdbScreencapMethod_All</a>&#160;&#160;&#160;(~<a class="el" href="MaaDef_8h.html#ad3df932dcfe5f836a7e98f0ebef2cf83">MaaAdbScreencapMethod_None</a>)</td></tr>
+<tr class="separator:a004b0d855740e5d3894fd14d9e47d080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab558d3ce8a6a402fb562715c452f04f5" id="r_ab558d3ce8a6a402fb562715c452f04f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ab558d3ce8a6a402fb562715c452f04f5">MaaAdbScreencapMethod_Default</a>&#160;&#160;&#160;    (<a class="el" href="MaaDef_8h.html#a004b0d855740e5d3894fd14d9e47d080">MaaAdbScreencapMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#a594d59b13a02d41b6a335e0f6575fca2">MaaAdbScreencapMethod_MinicapDirect</a>) &amp; (~<a class="el" href="MaaDef_8h.html#a81656785989eff6004704d5cc908552e">MaaAdbScreencapMethod_MinicapStream</a>))</td></tr>
+<tr class="separator:ab558d3ce8a6a402fb562715c452f04f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d201ca1f58e33b38be2fd7b9f977975" id="r_a5d201ca1f58e33b38be2fd7b9f977975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a5d201ca1f58e33b38be2fd7b9f977975">MaaAdbInputMethod_None</a>&#160;&#160;&#160;0ULL</td></tr>
+<tr class="separator:a5d201ca1f58e33b38be2fd7b9f977975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b721a64c9bee9b40343caff66f9f64e" id="r_a1b721a64c9bee9b40343caff66f9f64e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a1b721a64c9bee9b40343caff66f9f64e">MaaAdbInputMethod_AdbShell</a>&#160;&#160;&#160;1ULL</td></tr>
+<tr class="separator:a1b721a64c9bee9b40343caff66f9f64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21229ecc6df1fd87bd9877e7f80504a2" id="r_a21229ecc6df1fd87bd9877e7f80504a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a21229ecc6df1fd87bd9877e7f80504a2">MaaAdbInputMethod_MinitouchAndAdbKey</a>&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td></tr>
+<tr class="separator:a21229ecc6df1fd87bd9877e7f80504a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeedfd44c6fa8caaa1b9c371b90c82eb" id="r_abeedfd44c6fa8caaa1b9c371b90c82eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#abeedfd44c6fa8caaa1b9c371b90c82eb">MaaAdbInputMethod_Maatouch</a>&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td></tr>
+<tr class="separator:abeedfd44c6fa8caaa1b9c371b90c82eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45ca7f8c290dfe4c4c5652e0bdfa39f" id="r_ad45ca7f8c290dfe4c4c5652e0bdfa39f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ad45ca7f8c290dfe4c4c5652e0bdfa39f">MaaAdbInputMethod_EmulatorExtras</a>&#160;&#160;&#160;(1ULL &lt;&lt; 3)</td></tr>
+<tr class="separator:ad45ca7f8c290dfe4c4c5652e0bdfa39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409e67845229acd9d8332a482f9a7cb8" id="r_a409e67845229acd9d8332a482f9a7cb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a409e67845229acd9d8332a482f9a7cb8">MaaAdbInputMethod_All</a>&#160;&#160;&#160;(~<a class="el" href="MaaDef_8h.html#a5d201ca1f58e33b38be2fd7b9f977975">MaaAdbInputMethod_None</a>)</td></tr>
+<tr class="separator:a409e67845229acd9d8332a482f9a7cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89de988d2c725fd34d1596843551870" id="r_ad89de988d2c725fd34d1596843551870"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ad89de988d2c725fd34d1596843551870">MaaAdbInputMethod_Default</a>&#160;&#160;&#160;(<a class="el" href="MaaDef_8h.html#a409e67845229acd9d8332a482f9a7cb8">MaaAdbInputMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#ad45ca7f8c290dfe4c4c5652e0bdfa39f">MaaAdbInputMethod_EmulatorExtras</a>))</td></tr>
+<tr class="separator:ad89de988d2c725fd34d1596843551870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614ef2e0ce06147b8077158da914292f" id="r_a614ef2e0ce06147b8077158da914292f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a614ef2e0ce06147b8077158da914292f">MaaWin32ScreencapMethod_None</a>&#160;&#160;&#160;0ULL</td></tr>
+<tr class="separator:a614ef2e0ce06147b8077158da914292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac9b0f247ee9b853034b35969adc050" id="r_a8ac9b0f247ee9b853034b35969adc050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a8ac9b0f247ee9b853034b35969adc050">MaaWin32ScreencapMethod_GDI</a>&#160;&#160;&#160;1ULL</td></tr>
+<tr class="separator:a8ac9b0f247ee9b853034b35969adc050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28f7c7af8541a08033bd77772ebd082" id="r_ac28f7c7af8541a08033bd77772ebd082"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ac28f7c7af8541a08033bd77772ebd082">MaaWin32ScreencapMethod_FramePool</a>&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td></tr>
+<tr class="separator:ac28f7c7af8541a08033bd77772ebd082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d026e22eafc66cebdde713c465611c8" id="r_a4d026e22eafc66cebdde713c465611c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a4d026e22eafc66cebdde713c465611c8">MaaWin32ScreencapMethod_DXGI_DesktopDup</a>&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td></tr>
+<tr class="separator:a4d026e22eafc66cebdde713c465611c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637a673d747aa47edfa545da69c936b1" id="r_a637a673d747aa47edfa545da69c936b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a637a673d747aa47edfa545da69c936b1">MaaWin32InputMethod_None</a>&#160;&#160;&#160;0ULL</td></tr>
+<tr class="separator:a637a673d747aa47edfa545da69c936b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f884858b13895fa20adec0fede3aaf" id="r_a28f884858b13895fa20adec0fede3aaf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a28f884858b13895fa20adec0fede3aaf">MaaWin32InputMethod_Seize</a>&#160;&#160;&#160;1ULL</td></tr>
+<tr class="separator:a28f884858b13895fa20adec0fede3aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fee933704cac46f8223159133aeb8db" id="r_a2fee933704cac46f8223159133aeb8db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a2fee933704cac46f8223159133aeb8db">MaaWin32InputMethod_SendMessage</a>&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td></tr>
+<tr class="separator:a2fee933704cac46f8223159133aeb8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67ca0fce1cf517080804b1cae4be9b6" id="r_ab67ca0fce1cf517080804b1cae4be9b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ab67ca0fce1cf517080804b1cae4be9b6">MaaDbgControllerType_None</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab67ca0fce1cf517080804b1cae4be9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9179147858e053948175909352e60d" id="r_a6a9179147858e053948175909352e60d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a6a9179147858e053948175909352e60d">MaaDbgControllerType_CarouselImage</a>&#160;&#160;&#160;1ULL</td></tr>
+<tr class="separator:a6a9179147858e053948175909352e60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fbfc89110fdbfd5f535c0a4557b809" id="r_ad5fbfc89110fdbfd5f535c0a4557b809"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ad5fbfc89110fdbfd5f535c0a4557b809">MaaDbgControllerType_ReplayRecording</a>&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td></tr>
+<tr class="separator:ad5fbfc89110fdbfd5f535c0a4557b809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -138,6 +191,22 @@ Typedefs</h2></td></tr>
 <tr class="separator:a7519e6a8329a32c8e3058c20ec74cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeedbbed1bc17d1ffd80ff719a71cfed5" id="r_aeedbbed1bc17d1ffd80ff719a71cfed5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="MaaDef_8h.html#a9a764a8b46c0c97cbfe2d8e295d90e03">MaaId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aeedbbed1bc17d1ffd80ff719a71cfed5">MaaNodeId</a></td></tr>
 <tr class="separator:aeedbbed1bc17d1ffd80ff719a71cfed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4010bb63df489fc09efb6ba9a1fc1c98" id="r_a4010bb63df489fc09efb6ba9a1fc1c98"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a></td></tr>
+<tr class="separator:a4010bb63df489fc09efb6ba9a1fc1c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a52c8503deca448e71a407cdb14d259" id="r_a0a52c8503deca448e71a407cdb14d259"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a></td></tr>
+<tr class="separator:a0a52c8503deca448e71a407cdb14d259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7668a404d5063ffc525180d3e144999f" id="r_a7668a404d5063ffc525180d3e144999f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#a7668a404d5063ffc525180d3e144999f">MaaStringListBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a7668a404d5063ffc525180d3e144999f">MaaStringListBuffer</a></td></tr>
+<tr class="separator:a7668a404d5063ffc525180d3e144999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851b5afdefb36ce0affc05d7df854142" id="r_a851b5afdefb36ce0affc05d7df854142"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#a851b5afdefb36ce0affc05d7df854142">MaaImageListBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a851b5afdefb36ce0affc05d7df854142">MaaImageListBuffer</a></td></tr>
+<tr class="separator:a851b5afdefb36ce0affc05d7df854142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42b9ae54996623815428a30a8c9250d" id="r_ab42b9ae54996623815428a30a8c9250d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#ab42b9ae54996623815428a30a8c9250d">MaaResource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ab42b9ae54996623815428a30a8c9250d">MaaResource</a></td></tr>
+<tr class="separator:ab42b9ae54996623815428a30a8c9250d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c9c6967753196880a2a7f778fbb706" id="r_aa6c9c6967753196880a2a7f778fbb706"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#aa6c9c6967753196880a2a7f778fbb706">MaaController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aa6c9c6967753196880a2a7f778fbb706">MaaController</a></td></tr>
+<tr class="separator:aa6c9c6967753196880a2a7f778fbb706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c41e8466c5da06f230f729c29bdac8a" id="r_a8c41e8466c5da06f230f729c29bdac8a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#a8c41e8466c5da06f230f729c29bdac8a">MaaTasker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a8c41e8466c5da06f230f729c29bdac8a">MaaTasker</a></td></tr>
+<tr class="separator:a8c41e8466c5da06f230f729c29bdac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2101e87aad0f5d03b8136943daee40e" id="r_ad2101e87aad0f5d03b8136943daee40e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a></td></tr>
+<tr class="separator:ad2101e87aad0f5d03b8136943daee40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada00e4de6b9b4dcae75ed50f4bcaeef5" id="r_ada00e4de6b9b4dcae75ed50f4bcaeef5"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ada00e4de6b9b4dcae75ed50f4bcaeef5">MaaStatus</a></td></tr>
 <tr class="separator:ada00e4de6b9b4dcae75ed50f4bcaeef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8447ae4ab37f4c740d287a6697d2b72" id="r_af8447ae4ab37f4c740d287a6697d2b72"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#af8447ae4ab37f4c740d287a6697d2b72">MaaLoggingLevel</a></td></tr>
@@ -166,12 +235,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:a29af4457ff72b57b157a1d58d6d28878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7491d55c50840ccb1891ba9b7740c4" id="r_a7a7491d55c50840ccb1891ba9b7740c4"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a></td></tr>
 <tr class="separator:a7a7491d55c50840ccb1891ba9b7740c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ae9b4896224481bd0967903dafdfa1" id="r_a90ae9b4896224481bd0967903dafdfa1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structMaaRect.html">MaaRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a90ae9b4896224481bd0967903dafdfa1">MaaRect</a></td></tr>
+<tr class="separator:a90ae9b4896224481bd0967903dafdfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8191105b665bc8c02f0a78cebac71cd" id="r_aa8191105b665bc8c02f0a78cebac71cd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aa8191105b665bc8c02f0a78cebac71cd">MaaNotificationCallback</a>) (const char *message, const char *details_json, void *callback_arg)</td></tr>
 <tr class="separator:aa8191105b665bc8c02f0a78cebac71cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7430497e844175920ff35440297f39d" id="r_aa7430497e844175920ff35440297f39d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aa7430497e844175920ff35440297f39d">MaaCustomRecognizerCallback</a>) (MaaContext *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *recognizer_name, const char *custom_recognition_param, const MaaImageBuffer *image, void *trans_arg, <a class="el" href="structMaaRect.html">MaaRect</a> *out_box, MaaStringBuffer *out_detail)</td></tr>
-<tr class="separator:aa7430497e844175920ff35440297f39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb83c93a70db0cd0e02ea999b488ab11" id="r_adb83c93a70db0cd0e02ea999b488ab11"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#adb83c93a70db0cd0e02ea999b488ab11">MaaCustomActionCallback</a>) (MaaContext *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *action_name, const char *custom_action_param, const <a class="el" href="structMaaRect.html">MaaRect</a> *box, const char *reco_detail, void *trans_arg)</td></tr>
-<tr class="separator:adb83c93a70db0cd0e02ea999b488ab11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7353ae543eb1357324143a8f8d46c242" id="r_a7353ae543eb1357324143a8f8d46c242"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a7353ae543eb1357324143a8f8d46c242">MaaCustomRecognizerCallback</a>) (<a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a> *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *current_task_name, const char *custom_recognition_name, const char *custom_recognition_param, const <a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a> *image, const <a class="el" href="structMaaRect.html">MaaRect</a> *roi, void *trans_arg, <a class="el" href="structMaaRect.html">MaaRect</a> *out_box, <a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a> *out_detail)</td></tr>
+<tr class="separator:a7353ae543eb1357324143a8f8d46c242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900bb36dca59433a1b7cb8dedcee643b" id="r_a900bb36dca59433a1b7cb8dedcee643b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a900bb36dca59433a1b7cb8dedcee643b">MaaCustomActionCallback</a>) (<a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a> *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *current_task_name, const char *custom_action_name, const char *custom_action_param, <a class="el" href="MaaDef_8h.html#a7519e6a8329a32c8e3058c20ec74cda8">MaaRecoId</a> reco_id, const <a class="el" href="structMaaRect.html">MaaRect</a> *box, void *trans_arg)</td></tr>
+<tr class="separator:a900bb36dca59433a1b7cb8dedcee643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -234,10 +305,6 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3">MaaCtrlOption_ScreenshotTargetShortSide</a> = 2
 , <br />
-&#160;&#160;<a class="el" href="MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb">MaaCtrlOption_DefaultAppPackageEntry</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="MaaDef_8h.html#ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8">MaaCtrlOption_DefaultAppPackage</a> = 4
-, <br />
 &#160;&#160;<a class="el" href="MaaDef_8h.html#ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a">MaaCtrlOption_Recording</a> = 5
 <br />
  }</td></tr>
@@ -246,63 +313,6 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a7ce6a82a2484734da58c3c422d19a9b1" id="r_a7ce6a82a2484734da58c3c422d19a9b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a7ce6a82a2484734da58c3c422d19a9b1">MaaTaskerOptionEnum</a> { <a class="el" href="MaaDef_8h.html#a7ce6a82a2484734da58c3c422d19a9b1a44343c1c73aabeacff9a9f91805a16aa">MaaTaskerOption_Invalid</a> = 0
  }</td></tr>
 <tr class="separator:a7ce6a82a2484734da58c3c422d19a9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:afc5f89f2a1376d168f1148bf8b1b2a23" id="r_afc5f89f2a1376d168f1148bf8b1b2a23"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#afc5f89f2a1376d168f1148bf8b1b2a23">MaaAdbScreencapMethod_None</a> = 0ULL</td></tr>
-<tr class="separator:afc5f89f2a1376d168f1148bf8b1b2a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a2c9ba89115515884adb1b2f6872dc6" id="r_a2a2c9ba89115515884adb1b2f6872dc6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a2a2c9ba89115515884adb1b2f6872dc6">MaaAdbScreencapMethod_EncodeToFileAndPull</a> = 1ULL</td></tr>
-<tr class="separator:a2a2c9ba89115515884adb1b2f6872dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738cd9b2bb3f4e4bcbc4d1dd28c54a76" id="r_a738cd9b2bb3f4e4bcbc4d1dd28c54a76"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a738cd9b2bb3f4e4bcbc4d1dd28c54a76">MaaAdbScreencapMethod_Encode</a> = 1ULL &lt;&lt; 1</td></tr>
-<tr class="separator:a738cd9b2bb3f4e4bcbc4d1dd28c54a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd6dc85572915ccc69872dd5d58627d" id="r_a8fd6dc85572915ccc69872dd5d58627d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a8fd6dc85572915ccc69872dd5d58627d">MaaAdbScreencapMethod_RawWithGzip</a> = 1ULL &lt;&lt; 2</td></tr>
-<tr class="separator:a8fd6dc85572915ccc69872dd5d58627d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ce3598cf19f0d3445190b2db83cc06" id="r_a60ce3598cf19f0d3445190b2db83cc06"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a60ce3598cf19f0d3445190b2db83cc06">MaaAdbScreencapMethod_RawByNetcat</a> = 1ULL &lt;&lt; 3</td></tr>
-<tr class="separator:a60ce3598cf19f0d3445190b2db83cc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7a115ff5d935b637ed4d76aebf7ce3" id="r_a5f7a115ff5d935b637ed4d76aebf7ce3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a5f7a115ff5d935b637ed4d76aebf7ce3">MaaAdbScreencapMethod_MinicapDirect</a> = 1ULL &lt;&lt; 4</td></tr>
-<tr class="separator:a5f7a115ff5d935b637ed4d76aebf7ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7078a12d303d77db908db9989d98f2" id="r_a6d7078a12d303d77db908db9989d98f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a6d7078a12d303d77db908db9989d98f2">MaaAdbScreencapMethod_MinicapStream</a> = 1ULL &lt;&lt; 5</td></tr>
-<tr class="separator:a6d7078a12d303d77db908db9989d98f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907f2e7811c73fe367462488f6db9d4d" id="r_a907f2e7811c73fe367462488f6db9d4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a907f2e7811c73fe367462488f6db9d4d">MaaAdbScreencapMethod_EmulatorExtras</a> = 1ULL &lt;&lt; 6</td></tr>
-<tr class="separator:a907f2e7811c73fe367462488f6db9d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3df8a26538c4ba755f1dfd18b00454e" id="r_ac3df8a26538c4ba755f1dfd18b00454e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ac3df8a26538c4ba755f1dfd18b00454e">MaaAdbScreencapMethod_All</a> = ~<a class="el" href="MaaDef_8h.html#afc5f89f2a1376d168f1148bf8b1b2a23">MaaAdbScreencapMethod_None</a></td></tr>
-<tr class="separator:ac3df8a26538c4ba755f1dfd18b00454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9236f5b3e2509971ceece01c45c36cb2" id="r_a9236f5b3e2509971ceece01c45c36cb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a9236f5b3e2509971ceece01c45c36cb2">MaaAdbScreencapMethod_Default</a></td></tr>
-<tr class="separator:a9236f5b3e2509971ceece01c45c36cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74648cb6979d945196159385cfcd1868" id="r_a74648cb6979d945196159385cfcd1868"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a74648cb6979d945196159385cfcd1868">MaaAdbInputMethod_None</a> = 0ULL</td></tr>
-<tr class="separator:a74648cb6979d945196159385cfcd1868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8478b8c5cbb3cf371893c5a62bb23552" id="r_a8478b8c5cbb3cf371893c5a62bb23552"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a8478b8c5cbb3cf371893c5a62bb23552">MaaAdbInputMethod_AdbShell</a> = 1ULL</td></tr>
-<tr class="separator:a8478b8c5cbb3cf371893c5a62bb23552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac66f44931fdf340ef7c1637227c2d26" id="r_aac66f44931fdf340ef7c1637227c2d26"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aac66f44931fdf340ef7c1637227c2d26">MaaAdbInputMethod_MinitouchAndAdbKey</a> = 1ULL &lt;&lt; 1</td></tr>
-<tr class="separator:aac66f44931fdf340ef7c1637227c2d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59fc58f3ca8fffd3dac5ee5b05f3bab" id="r_ab59fc58f3ca8fffd3dac5ee5b05f3bab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ab59fc58f3ca8fffd3dac5ee5b05f3bab">MaaAdbInputMethod_Maatouch</a> = 1ULL &lt;&lt; 2</td></tr>
-<tr class="separator:ab59fc58f3ca8fffd3dac5ee5b05f3bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5873d6868d9f063b59f35b0eca6d1c6c" id="r_a5873d6868d9f063b59f35b0eca6d1c6c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a5873d6868d9f063b59f35b0eca6d1c6c">MaaAdbInputMethod_EmulatorExtras</a> = 1ULL &lt;&lt; 3</td></tr>
-<tr class="separator:a5873d6868d9f063b59f35b0eca6d1c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320e575154515205c2f1c0f244b48b12" id="r_a320e575154515205c2f1c0f244b48b12"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a320e575154515205c2f1c0f244b48b12">MaaAdbInputMethod_All</a> = ~<a class="el" href="MaaDef_8h.html#a74648cb6979d945196159385cfcd1868">MaaAdbInputMethod_None</a></td></tr>
-<tr class="separator:a320e575154515205c2f1c0f244b48b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d0d8a4ab1426226f745f2a75d6c5c4" id="r_af7d0d8a4ab1426226f745f2a75d6c5c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#af7d0d8a4ab1426226f745f2a75d6c5c4">MaaAdbInputMethod_Default</a> = <a class="el" href="MaaDef_8h.html#a320e575154515205c2f1c0f244b48b12">MaaAdbInputMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#a5873d6868d9f063b59f35b0eca6d1c6c">MaaAdbInputMethod_EmulatorExtras</a>)</td></tr>
-<tr class="separator:af7d0d8a4ab1426226f745f2a75d6c5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6f3a31d0b753183e9f76804aece85d" id="r_a6a6f3a31d0b753183e9f76804aece85d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a6a6f3a31d0b753183e9f76804aece85d">MaaWin32ScreencapMethod_None</a> = 0ULL</td></tr>
-<tr class="separator:a6a6f3a31d0b753183e9f76804aece85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b02e137dc485a8baf003069d975f5f8" id="r_a7b02e137dc485a8baf003069d975f5f8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a7b02e137dc485a8baf003069d975f5f8">MaaWin32ScreencapMethod_GDI</a> = 1ULL</td></tr>
-<tr class="separator:a7b02e137dc485a8baf003069d975f5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09dce643a72de849a0caf2b1d83cce59" id="r_a09dce643a72de849a0caf2b1d83cce59"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a09dce643a72de849a0caf2b1d83cce59">MaaWin32ScreencapMethod_FramePool</a> = 1ULL &lt;&lt; 1</td></tr>
-<tr class="separator:a09dce643a72de849a0caf2b1d83cce59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21106da541cf447ad061f80287ee5272" id="r_a21106da541cf447ad061f80287ee5272"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a21106da541cf447ad061f80287ee5272">MaaWin32ScreencapMethod_DXGI_DesktopDup</a> = 1ULL &lt;&lt; 2</td></tr>
-<tr class="separator:a21106da541cf447ad061f80287ee5272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc07dbe45cf14c497e8c5f4cf42e6fc" id="r_a8dc07dbe45cf14c497e8c5f4cf42e6fc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a8dc07dbe45cf14c497e8c5f4cf42e6fc">MaaWin32InputMethod_None</a> = 0ULL</td></tr>
-<tr class="separator:a8dc07dbe45cf14c497e8c5f4cf42e6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4c99d7afbba7fdd5861352dacee695" id="r_aad4c99d7afbba7fdd5861352dacee695"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aad4c99d7afbba7fdd5861352dacee695">MaaWin32InputMethod_Seize</a> = 1ULL</td></tr>
-<tr class="separator:aad4c99d7afbba7fdd5861352dacee695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a210b463bfe443577686aa46311346639" id="r_a210b463bfe443577686aa46311346639"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a210b463bfe443577686aa46311346639">MaaWin32InputMethod_SendMessage</a> = 1ULL &lt;&lt; 1</td></tr>
-<tr class="separator:a210b463bfe443577686aa46311346639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9823282a09aa697d77df40fa9ab1660" id="r_ac9823282a09aa697d77df40fa9ab1660"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#ac9823282a09aa697d77df40fa9ab1660">MaaDbgControllerType_None</a> = 0</td></tr>
-<tr class="separator:ac9823282a09aa697d77df40fa9ab1660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa764b4f1d36768f2a603b22952913adf" id="r_aa764b4f1d36768f2a603b22952913adf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#aa764b4f1d36768f2a603b22952913adf">MaaDbgControllerType_CarouselImage</a> = 1ULL</td></tr>
-<tr class="separator:aa764b4f1d36768f2a603b22952913adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18506634bdaae7d877753c98b66fed99" id="r_a18506634bdaae7d877753c98b66fed99"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MaaDef_8h.html#a18506634bdaae7d877753c98b66fed99">MaaDbgControllerType_ReplayRecording</a> = 1ULL &lt;&lt; 1</td></tr>
-<tr class="separator:a18506634bdaae7d877753c98b66fed99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The type definitions. </p>
@@ -316,7 +326,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MaaNullSize&#160;&#160;&#160;((<a class="el" href="MaaDef_8h.html#a72a89077c419a0fe586d68bde004d856">MaaSize</a>)-1)</td>
+          <td class="memname">#define MaaNullSize&#160;&#160;&#160;UINT64_MAX</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -331,6 +341,384 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MaaInvalidId&#160;&#160;&#160;((<a class="el" href="MaaDef_8h.html#a9a764a8b46c0c97cbfe2d8e295d90e03">MaaId</a>)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3df932dcfe5f836a7e98f0ebef2cf83" name="ad3df932dcfe5f836a7e98f0ebef2cf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3df932dcfe5f836a7e98f0ebef2cf83">&#9670;&#160;</a></span>MaaAdbScreencapMethod_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_None&#160;&#160;&#160;0ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba5cc89306598105a8cee7580867bc35" name="aba5cc89306598105a8cee7580867bc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5cc89306598105a8cee7580867bc35">&#9670;&#160;</a></span>MaaAdbScreencapMethod_EncodeToFileAndPull</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_EncodeToFileAndPull&#160;&#160;&#160;1ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64dc561558d3344586b97b208ca466eb" name="a64dc561558d3344586b97b208ca466eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64dc561558d3344586b97b208ca466eb">&#9670;&#160;</a></span>MaaAdbScreencapMethod_Encode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_Encode&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a291483b888ab3e944818b33aeb98c9" name="a1a291483b888ab3e944818b33aeb98c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a291483b888ab3e944818b33aeb98c9">&#9670;&#160;</a></span>MaaAdbScreencapMethod_RawWithGzip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_RawWithGzip&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94e3946d5d361f2571126016d41a2676" name="a94e3946d5d361f2571126016d41a2676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e3946d5d361f2571126016d41a2676">&#9670;&#160;</a></span>MaaAdbScreencapMethod_RawByNetcat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_RawByNetcat&#160;&#160;&#160;(1ULL &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a594d59b13a02d41b6a335e0f6575fca2" name="a594d59b13a02d41b6a335e0f6575fca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594d59b13a02d41b6a335e0f6575fca2">&#9670;&#160;</a></span>MaaAdbScreencapMethod_MinicapDirect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_MinicapDirect&#160;&#160;&#160;(1ULL &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81656785989eff6004704d5cc908552e" name="a81656785989eff6004704d5cc908552e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81656785989eff6004704d5cc908552e">&#9670;&#160;</a></span>MaaAdbScreencapMethod_MinicapStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_MinicapStream&#160;&#160;&#160;(1ULL &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55c4f433547d52de1c93c3d01d58aed7" name="a55c4f433547d52de1c93c3d01d58aed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c4f433547d52de1c93c3d01d58aed7">&#9670;&#160;</a></span>MaaAdbScreencapMethod_EmulatorExtras</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_EmulatorExtras&#160;&#160;&#160;(1ULL &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a004b0d855740e5d3894fd14d9e47d080" name="a004b0d855740e5d3894fd14d9e47d080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004b0d855740e5d3894fd14d9e47d080">&#9670;&#160;</a></span>MaaAdbScreencapMethod_All</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_All&#160;&#160;&#160;(~<a class="el" href="MaaDef_8h.html#ad3df932dcfe5f836a7e98f0ebef2cf83">MaaAdbScreencapMethod_None</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab558d3ce8a6a402fb562715c452f04f5" name="ab558d3ce8a6a402fb562715c452f04f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab558d3ce8a6a402fb562715c452f04f5">&#9670;&#160;</a></span>MaaAdbScreencapMethod_Default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbScreencapMethod_Default&#160;&#160;&#160;    (<a class="el" href="MaaDef_8h.html#a004b0d855740e5d3894fd14d9e47d080">MaaAdbScreencapMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#a594d59b13a02d41b6a335e0f6575fca2">MaaAdbScreencapMethod_MinicapDirect</a>) &amp; (~<a class="el" href="MaaDef_8h.html#a81656785989eff6004704d5cc908552e">MaaAdbScreencapMethod_MinicapStream</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d201ca1f58e33b38be2fd7b9f977975" name="a5d201ca1f58e33b38be2fd7b9f977975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d201ca1f58e33b38be2fd7b9f977975">&#9670;&#160;</a></span>MaaAdbInputMethod_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_None&#160;&#160;&#160;0ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b721a64c9bee9b40343caff66f9f64e" name="a1b721a64c9bee9b40343caff66f9f64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b721a64c9bee9b40343caff66f9f64e">&#9670;&#160;</a></span>MaaAdbInputMethod_AdbShell</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_AdbShell&#160;&#160;&#160;1ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21229ecc6df1fd87bd9877e7f80504a2" name="a21229ecc6df1fd87bd9877e7f80504a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21229ecc6df1fd87bd9877e7f80504a2">&#9670;&#160;</a></span>MaaAdbInputMethod_MinitouchAndAdbKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_MinitouchAndAdbKey&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeedfd44c6fa8caaa1b9c371b90c82eb" name="abeedfd44c6fa8caaa1b9c371b90c82eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeedfd44c6fa8caaa1b9c371b90c82eb">&#9670;&#160;</a></span>MaaAdbInputMethod_Maatouch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_Maatouch&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad45ca7f8c290dfe4c4c5652e0bdfa39f" name="ad45ca7f8c290dfe4c4c5652e0bdfa39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad45ca7f8c290dfe4c4c5652e0bdfa39f">&#9670;&#160;</a></span>MaaAdbInputMethod_EmulatorExtras</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_EmulatorExtras&#160;&#160;&#160;(1ULL &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a409e67845229acd9d8332a482f9a7cb8" name="a409e67845229acd9d8332a482f9a7cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409e67845229acd9d8332a482f9a7cb8">&#9670;&#160;</a></span>MaaAdbInputMethod_All</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_All&#160;&#160;&#160;(~<a class="el" href="MaaDef_8h.html#a5d201ca1f58e33b38be2fd7b9f977975">MaaAdbInputMethod_None</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad89de988d2c725fd34d1596843551870" name="ad89de988d2c725fd34d1596843551870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89de988d2c725fd34d1596843551870">&#9670;&#160;</a></span>MaaAdbInputMethod_Default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaAdbInputMethod_Default&#160;&#160;&#160;(<a class="el" href="MaaDef_8h.html#a409e67845229acd9d8332a482f9a7cb8">MaaAdbInputMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#ad45ca7f8c290dfe4c4c5652e0bdfa39f">MaaAdbInputMethod_EmulatorExtras</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a614ef2e0ce06147b8077158da914292f" name="a614ef2e0ce06147b8077158da914292f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614ef2e0ce06147b8077158da914292f">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32ScreencapMethod_None&#160;&#160;&#160;0ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ac9b0f247ee9b853034b35969adc050" name="a8ac9b0f247ee9b853034b35969adc050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac9b0f247ee9b853034b35969adc050">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_GDI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32ScreencapMethod_GDI&#160;&#160;&#160;1ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac28f7c7af8541a08033bd77772ebd082" name="ac28f7c7af8541a08033bd77772ebd082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28f7c7af8541a08033bd77772ebd082">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_FramePool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32ScreencapMethod_FramePool&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d026e22eafc66cebdde713c465611c8" name="a4d026e22eafc66cebdde713c465611c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d026e22eafc66cebdde713c465611c8">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_DXGI_DesktopDup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32ScreencapMethod_DXGI_DesktopDup&#160;&#160;&#160;(1ULL &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a637a673d747aa47edfa545da69c936b1" name="a637a673d747aa47edfa545da69c936b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637a673d747aa47edfa545da69c936b1">&#9670;&#160;</a></span>MaaWin32InputMethod_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32InputMethod_None&#160;&#160;&#160;0ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28f884858b13895fa20adec0fede3aaf" name="a28f884858b13895fa20adec0fede3aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f884858b13895fa20adec0fede3aaf">&#9670;&#160;</a></span>MaaWin32InputMethod_Seize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32InputMethod_Seize&#160;&#160;&#160;1ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fee933704cac46f8223159133aeb8db" name="a2fee933704cac46f8223159133aeb8db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fee933704cac46f8223159133aeb8db">&#9670;&#160;</a></span>MaaWin32InputMethod_SendMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaWin32InputMethod_SendMessage&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab67ca0fce1cf517080804b1cae4be9b6" name="ab67ca0fce1cf517080804b1cae4be9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67ca0fce1cf517080804b1cae4be9b6">&#9670;&#160;</a></span>MaaDbgControllerType_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaDbgControllerType_None&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a9179147858e053948175909352e60d" name="a6a9179147858e053948175909352e60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9179147858e053948175909352e60d">&#9670;&#160;</a></span>MaaDbgControllerType_CarouselImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaDbgControllerType_CarouselImage&#160;&#160;&#160;1ULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5fbfc89110fdbfd5f535c0a4557b809" name="ad5fbfc89110fdbfd5f535c0a4557b809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5fbfc89110fdbfd5f535c0a4557b809">&#9670;&#160;</a></span>MaaDbgControllerType_ReplayRecording</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaaDbgControllerType_ReplayRecording&#160;&#160;&#160;(1ULL &lt;&lt; 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -444,6 +832,118 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="MaaDef_8h.html#a9a764a8b46c0c97cbfe2d8e295d90e03">MaaId</a> <a class="el" href="MaaDef_8h.html#aeedbbed1bc17d1ffd80ff719a71cfed5">MaaNodeId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4010bb63df489fc09efb6ba9a1fc1c98" name="a4010bb63df489fc09efb6ba9a1fc1c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4010bb63df489fc09efb6ba9a1fc1c98">&#9670;&#160;</a></span>MaaStringBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a> <a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a52c8503deca448e71a407cdb14d259" name="a0a52c8503deca448e71a407cdb14d259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a52c8503deca448e71a407cdb14d259">&#9670;&#160;</a></span>MaaImageBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a> <a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7668a404d5063ffc525180d3e144999f" name="a7668a404d5063ffc525180d3e144999f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7668a404d5063ffc525180d3e144999f">&#9670;&#160;</a></span>MaaStringListBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#a7668a404d5063ffc525180d3e144999f">MaaStringListBuffer</a> <a class="el" href="MaaDef_8h.html#a7668a404d5063ffc525180d3e144999f">MaaStringListBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a851b5afdefb36ce0affc05d7df854142" name="a851b5afdefb36ce0affc05d7df854142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851b5afdefb36ce0affc05d7df854142">&#9670;&#160;</a></span>MaaImageListBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#a851b5afdefb36ce0affc05d7df854142">MaaImageListBuffer</a> <a class="el" href="MaaDef_8h.html#a851b5afdefb36ce0affc05d7df854142">MaaImageListBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab42b9ae54996623815428a30a8c9250d" name="ab42b9ae54996623815428a30a8c9250d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42b9ae54996623815428a30a8c9250d">&#9670;&#160;</a></span>MaaResource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#ab42b9ae54996623815428a30a8c9250d">MaaResource</a> <a class="el" href="MaaDef_8h.html#ab42b9ae54996623815428a30a8c9250d">MaaResource</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6c9c6967753196880a2a7f778fbb706" name="aa6c9c6967753196880a2a7f778fbb706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c9c6967753196880a2a7f778fbb706">&#9670;&#160;</a></span>MaaController</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#aa6c9c6967753196880a2a7f778fbb706">MaaController</a> <a class="el" href="MaaDef_8h.html#aa6c9c6967753196880a2a7f778fbb706">MaaController</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c41e8466c5da06f230f729c29bdac8a" name="a8c41e8466c5da06f230f729c29bdac8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c41e8466c5da06f230f729c29bdac8a">&#9670;&#160;</a></span>MaaTasker</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#a8c41e8466c5da06f230f729c29bdac8a">MaaTasker</a> <a class="el" href="MaaDef_8h.html#a8c41e8466c5da06f230f729c29bdac8a">MaaTasker</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2101e87aad0f5d03b8136943daee40e" name="ad2101e87aad0f5d03b8136943daee40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2101e87aad0f5d03b8136943daee40e">&#9670;&#160;</a></span>MaaContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a> <a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -587,6 +1087,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Use bitwise OR to set the method you need, MaaFramework will test their speed and use the fastest one. </p>
 
 </div>
 </div>
@@ -601,6 +1102,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Use bitwise OR to set the method you need, MaaFramework will select the available ones according to priority. The priority is: EmulatorExtras &gt; Maatouch &gt; MinitouchAndAdbKey &gt; AdbShell </p>
 
 </div>
 </div>
@@ -615,6 +1117,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>No bitwise OR, just set it </p>
 
 </div>
 </div>
@@ -629,6 +1132,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>No bitwise OR, just set it </p>
 
 </div>
 </div>
@@ -640,6 +1144,21 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef uint64_t <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>No bitwise OR, just set it </p>
+
+</div>
+</div>
+<a id="a90ae9b4896224481bd0967903dafdfa1" name="a90ae9b4896224481bd0967903dafdfa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ae9b4896224481bd0967903dafdfa1">&#9670;&#160;</a></span>MaaRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structMaaRect.html">MaaRect</a> <a class="el" href="structMaaRect.html">MaaRect</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -660,28 +1179,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa7430497e844175920ff35440297f39d" name="aa7430497e844175920ff35440297f39d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7430497e844175920ff35440297f39d">&#9670;&#160;</a></span>MaaCustomRecognizerCallback</h2>
+<a id="a7353ae543eb1357324143a8f8d46c242" name="a7353ae543eb1357324143a8f8d46c242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7353ae543eb1357324143a8f8d46c242">&#9670;&#160;</a></span>MaaCustomRecognizerCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(* MaaCustomRecognizerCallback) (MaaContext *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *recognizer_name, const char *custom_recognition_param, const MaaImageBuffer *image, void *trans_arg, <a class="el" href="structMaaRect.html">MaaRect</a> *out_box, MaaStringBuffer *out_detail)</td>
+          <td class="memname">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(* MaaCustomRecognizerCallback) (<a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a> *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *current_task_name, const char *custom_recognition_name, const char *custom_recognition_param, const <a class="el" href="MaaDef_8h.html#a0a52c8503deca448e71a407cdb14d259">MaaImageBuffer</a> *image, const <a class="el" href="structMaaRect.html">MaaRect</a> *roi, void *trans_arg, <a class="el" href="structMaaRect.html">MaaRect</a> *out_box, <a class="el" href="MaaDef_8h.html#a4010bb63df489fc09efb6ba9a1fc1c98">MaaStringBuffer</a> *out_detail)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adb83c93a70db0cd0e02ea999b488ab11" name="adb83c93a70db0cd0e02ea999b488ab11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb83c93a70db0cd0e02ea999b488ab11">&#9670;&#160;</a></span>MaaCustomActionCallback</h2>
+<a id="a900bb36dca59433a1b7cb8dedcee643b" name="a900bb36dca59433a1b7cb8dedcee643b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900bb36dca59433a1b7cb8dedcee643b">&#9670;&#160;</a></span>MaaCustomActionCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(* MaaCustomActionCallback) (MaaContext *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *action_name, const char *custom_action_param, const <a class="el" href="structMaaRect.html">MaaRect</a> *box, const char *reco_detail, void *trans_arg)</td>
+          <td class="memname">typedef <a class="el" href="MaaDef_8h.html#a2f7289f2a8e07f48c6261b52a120cdf6">MaaBool</a>(* MaaCustomActionCallback) (<a class="el" href="MaaDef_8h.html#ad2101e87aad0f5d03b8136943daee40e">MaaContext</a> *context, <a class="el" href="MaaDef_8h.html#a711b3db9be6db60ae4cb09e3629e42f0">MaaTaskId</a> task_id, const char *current_task_name, const char *custom_action_name, const char *custom_action_param, <a class="el" href="MaaDef_8h.html#a7519e6a8329a32c8e3058c20ec74cda8">MaaRecoId</a> reco_id, const <a class="el" href="structMaaRect.html">MaaRect</a> *box, void *trans_arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -803,11 +1322,6 @@ default value is MaaLoggingLevel_Error
 <tr><td class="fieldname"><a id="ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3" name="ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3"></a>MaaCtrlOption_ScreenshotTargetShortSide&#160;</td><td class="fielddoc"><p>Only one of long and short side can be set, and the other is automatically scaled according to the aspect ratio.</p>
 <p>value: int, eg: 1080; val_size: sizeof(int) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb" name="ac9daa36008267a26662244d2f5570003a8703d81d225d8e9480e5c76ddc367bbb"></a>MaaCtrlOption_DefaultAppPackageEntry&#160;</td><td class="fielddoc"><p>For StartApp </p><pre class="fragment">value: string, eg: "com.hypergryph.arknights/com.u8.sdk.U8UnityContext"; val_size: string
-length 
-</pre> </td></tr>
-<tr><td class="fieldname"><a id="ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8" name="ac9daa36008267a26662244d2f5570003ab0450b8b0f8d346217f8cae193a0dce8"></a>MaaCtrlOption_DefaultAppPackage&#160;</td><td class="fielddoc"><p>For StopApp </p><pre class="fragment">value: string, eg: "com.hypergryph.arknights"; val_size: string length 
-</pre> </td></tr>
 <tr><td class="fieldname"><a id="ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a" name="ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a"></a>MaaCtrlOption_Recording&#160;</td><td class="fielddoc"><p>Dump all screenshots and actions </p><pre class="fragment">Recording will evaluate to true if any of this or
 MaaGlobalOptionEnum::MaaGlobalOption_Recording is true.
 
@@ -834,396 +1348,13 @@ value: bool, eg: true; val_size: sizeof(bool)
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="afc5f89f2a1376d168f1148bf8b1b2a23" name="afc5f89f2a1376d168f1148bf8b1b2a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5f89f2a1376d168f1148bf8b1b2a23">&#9670;&#160;</a></span>MaaAdbScreencapMethod_None</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_None = 0ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a2c9ba89115515884adb1b2f6872dc6" name="a2a2c9ba89115515884adb1b2f6872dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a2c9ba89115515884adb1b2f6872dc6">&#9670;&#160;</a></span>MaaAdbScreencapMethod_EncodeToFileAndPull</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_EncodeToFileAndPull = 1ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a738cd9b2bb3f4e4bcbc4d1dd28c54a76" name="a738cd9b2bb3f4e4bcbc4d1dd28c54a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a738cd9b2bb3f4e4bcbc4d1dd28c54a76">&#9670;&#160;</a></span>MaaAdbScreencapMethod_Encode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_Encode = 1ULL &lt;&lt; 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8fd6dc85572915ccc69872dd5d58627d" name="a8fd6dc85572915ccc69872dd5d58627d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fd6dc85572915ccc69872dd5d58627d">&#9670;&#160;</a></span>MaaAdbScreencapMethod_RawWithGzip</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_RawWithGzip = 1ULL &lt;&lt; 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60ce3598cf19f0d3445190b2db83cc06" name="a60ce3598cf19f0d3445190b2db83cc06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ce3598cf19f0d3445190b2db83cc06">&#9670;&#160;</a></span>MaaAdbScreencapMethod_RawByNetcat</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_RawByNetcat = 1ULL &lt;&lt; 3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f7a115ff5d935b637ed4d76aebf7ce3" name="a5f7a115ff5d935b637ed4d76aebf7ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7a115ff5d935b637ed4d76aebf7ce3">&#9670;&#160;</a></span>MaaAdbScreencapMethod_MinicapDirect</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_MinicapDirect = 1ULL &lt;&lt; 4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d7078a12d303d77db908db9989d98f2" name="a6d7078a12d303d77db908db9989d98f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7078a12d303d77db908db9989d98f2">&#9670;&#160;</a></span>MaaAdbScreencapMethod_MinicapStream</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_MinicapStream = 1ULL &lt;&lt; 5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a907f2e7811c73fe367462488f6db9d4d" name="a907f2e7811c73fe367462488f6db9d4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a907f2e7811c73fe367462488f6db9d4d">&#9670;&#160;</a></span>MaaAdbScreencapMethod_EmulatorExtras</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_EmulatorExtras = 1ULL &lt;&lt; 6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3df8a26538c4ba755f1dfd18b00454e" name="ac3df8a26538c4ba755f1dfd18b00454e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3df8a26538c4ba755f1dfd18b00454e">&#9670;&#160;</a></span>MaaAdbScreencapMethod_All</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_All = ~<a class="el" href="MaaDef_8h.html#afc5f89f2a1376d168f1148bf8b1b2a23">MaaAdbScreencapMethod_None</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9236f5b3e2509971ceece01c45c36cb2" name="a9236f5b3e2509971ceece01c45c36cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9236f5b3e2509971ceece01c45c36cb2">&#9670;&#160;</a></span>MaaAdbScreencapMethod_Default</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369">MaaAdbScreencapMethod</a> MaaAdbScreencapMethod_Default</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <a class="code hl_variable" href="MaaDef_8h.html#ac3df8a26538c4ba755f1dfd18b00454e">MaaAdbScreencapMethod_All</a> &amp; (~MaaAdbScreencapMethod_MinicapDirect) &amp; (~<a class="code hl_variable" href="MaaDef_8h.html#a6d7078a12d303d77db908db9989d98f2">MaaAdbScreencapMethod_MinicapStream</a>)</div>
-<div class="ttc" id="aMaaDef_8h_html_a6d7078a12d303d77db908db9989d98f2"><div class="ttname"><a href="MaaDef_8h.html#a6d7078a12d303d77db908db9989d98f2">MaaAdbScreencapMethod_MinicapStream</a></div><div class="ttdeci">const MaaAdbScreencapMethod MaaAdbScreencapMethod_MinicapStream</div><div class="ttdef"><b>Definition</b> MaaDef.h:174</div></div>
-<div class="ttc" id="aMaaDef_8h_html_ac3df8a26538c4ba755f1dfd18b00454e"><div class="ttname"><a href="MaaDef_8h.html#ac3df8a26538c4ba755f1dfd18b00454e">MaaAdbScreencapMethod_All</a></div><div class="ttdeci">const MaaAdbScreencapMethod MaaAdbScreencapMethod_All</div><div class="ttdef"><b>Definition</b> MaaDef.h:177</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a74648cb6979d945196159385cfcd1868" name="a74648cb6979d945196159385cfcd1868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74648cb6979d945196159385cfcd1868">&#9670;&#160;</a></span>MaaAdbInputMethod_None</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_None = 0ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8478b8c5cbb3cf371893c5a62bb23552" name="a8478b8c5cbb3cf371893c5a62bb23552"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8478b8c5cbb3cf371893c5a62bb23552">&#9670;&#160;</a></span>MaaAdbInputMethod_AdbShell</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_AdbShell = 1ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac66f44931fdf340ef7c1637227c2d26" name="aac66f44931fdf340ef7c1637227c2d26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac66f44931fdf340ef7c1637227c2d26">&#9670;&#160;</a></span>MaaAdbInputMethod_MinitouchAndAdbKey</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_MinitouchAndAdbKey = 1ULL &lt;&lt; 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab59fc58f3ca8fffd3dac5ee5b05f3bab" name="ab59fc58f3ca8fffd3dac5ee5b05f3bab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab59fc58f3ca8fffd3dac5ee5b05f3bab">&#9670;&#160;</a></span>MaaAdbInputMethod_Maatouch</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_Maatouch = 1ULL &lt;&lt; 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5873d6868d9f063b59f35b0eca6d1c6c" name="a5873d6868d9f063b59f35b0eca6d1c6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5873d6868d9f063b59f35b0eca6d1c6c">&#9670;&#160;</a></span>MaaAdbInputMethod_EmulatorExtras</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_EmulatorExtras = 1ULL &lt;&lt; 3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a320e575154515205c2f1c0f244b48b12" name="a320e575154515205c2f1c0f244b48b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320e575154515205c2f1c0f244b48b12">&#9670;&#160;</a></span>MaaAdbInputMethod_All</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_All = ~<a class="el" href="MaaDef_8h.html#a74648cb6979d945196159385cfcd1868">MaaAdbInputMethod_None</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7d0d8a4ab1426226f745f2a75d6c5c4" name="af7d0d8a4ab1426226f745f2a75d6c5c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7d0d8a4ab1426226f745f2a75d6c5c4">&#9670;&#160;</a></span>MaaAdbInputMethod_Default</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#aa02386b09246fa0704ec371f80bb661f">MaaAdbInputMethod</a> MaaAdbInputMethod_Default = <a class="el" href="MaaDef_8h.html#a320e575154515205c2f1c0f244b48b12">MaaAdbInputMethod_All</a> &amp; (~<a class="el" href="MaaDef_8h.html#a5873d6868d9f063b59f35b0eca6d1c6c">MaaAdbInputMethod_EmulatorExtras</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a6f3a31d0b753183e9f76804aece85d" name="a6a6f3a31d0b753183e9f76804aece85d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a6f3a31d0b753183e9f76804aece85d">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_None</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a> MaaWin32ScreencapMethod_None = 0ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b02e137dc485a8baf003069d975f5f8" name="a7b02e137dc485a8baf003069d975f5f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b02e137dc485a8baf003069d975f5f8">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_GDI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a> MaaWin32ScreencapMethod_GDI = 1ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09dce643a72de849a0caf2b1d83cce59" name="a09dce643a72de849a0caf2b1d83cce59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09dce643a72de849a0caf2b1d83cce59">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_FramePool</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a> MaaWin32ScreencapMethod_FramePool = 1ULL &lt;&lt; 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a21106da541cf447ad061f80287ee5272" name="a21106da541cf447ad061f80287ee5272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21106da541cf447ad061f80287ee5272">&#9670;&#160;</a></span>MaaWin32ScreencapMethod_DXGI_DesktopDup</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a23833339ba6406d680688350d27d37b3">MaaWin32ScreencapMethod</a> MaaWin32ScreencapMethod_DXGI_DesktopDup = 1ULL &lt;&lt; 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dc07dbe45cf14c497e8c5f4cf42e6fc" name="a8dc07dbe45cf14c497e8c5f4cf42e6fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc07dbe45cf14c497e8c5f4cf42e6fc">&#9670;&#160;</a></span>MaaWin32InputMethod_None</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a> MaaWin32InputMethod_None = 0ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad4c99d7afbba7fdd5861352dacee695" name="aad4c99d7afbba7fdd5861352dacee695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad4c99d7afbba7fdd5861352dacee695">&#9670;&#160;</a></span>MaaWin32InputMethod_Seize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a> MaaWin32InputMethod_Seize = 1ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a210b463bfe443577686aa46311346639" name="a210b463bfe443577686aa46311346639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a210b463bfe443577686aa46311346639">&#9670;&#160;</a></span>MaaWin32InputMethod_SendMessage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878">MaaWin32InputMethod</a> MaaWin32InputMethod_SendMessage = 1ULL &lt;&lt; 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9823282a09aa697d77df40fa9ab1660" name="ac9823282a09aa697d77df40fa9ab1660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9823282a09aa697d77df40fa9ab1660">&#9670;&#160;</a></span>MaaDbgControllerType_None</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a> MaaDbgControllerType_None = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa764b4f1d36768f2a603b22952913adf" name="aa764b4f1d36768f2a603b22952913adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa764b4f1d36768f2a603b22952913adf">&#9670;&#160;</a></span>MaaDbgControllerType_CarouselImage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a> MaaDbgControllerType_CarouselImage = 1ULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18506634bdaae7d877753c98b66fed99" name="a18506634bdaae7d877753c98b66fed99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18506634bdaae7d877753c98b66fed99">&#9670;&#160;</a></span>MaaDbgControllerType_ReplayRecording</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4">MaaDbgControllerType</a> MaaDbgControllerType_ReplayRecording = 1ULL &lt;&lt; 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_370cd1367c21b1a87c5c9c6803b8d0b9.html">MaaFramework</a></li><li class="navelem"><a class="el" href="MaaDef_8h.html">MaaDef.h</a></li>
-    <li class="footer">Generated on Fri Sep 6 2024 for Maa Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Sun Sep 15 2024 for Maa Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

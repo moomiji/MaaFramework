@@ -47,7 +47,7 @@
     </invincdepgraph>
     <sectiondef kind="func">
       <memberdef kind="function" id="MaaToolkitDesktopWindow_8h_1aa02e7ddc8a0142b2d2dbaf42d0cd0926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref> MaaToolkitDesktopWindowList *</type>
+        <type><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref> <ref refid="MaaToolkitDef_8h_1aaf164274a2c0089edb67f33e26719ff0" kindref="member">MaaToolkitDesktopWindowList</ref> *</type>
         <definition>MAA_TOOLKIT_API MaaToolkitDesktopWindowList * MaaToolkitDesktopWindowListCreate</definition>
         <argsstring>()</argsstring>
         <name>MaaToolkitDesktopWindowListCreate</name>
@@ -65,7 +65,7 @@
         <argsstring>(MaaToolkitDesktopWindowList *handle)</argsstring>
         <name>MaaToolkitDesktopWindowListDestroy</name>
         <param>
-          <type>MaaToolkitDesktopWindowList *</type>
+          <type><ref refid="MaaToolkitDef_8h_1aaf164274a2c0089edb67f33e26719ff0" kindref="member">MaaToolkitDesktopWindowList</ref> *</type>
           <declname>handle</declname>
         </param>
         <briefdescription>
@@ -82,7 +82,7 @@
         <argsstring>(MaaToolkitDesktopWindowList *buffer)</argsstring>
         <name>MaaToolkitDesktopWindowFindAll</name>
         <param>
-          <type>MaaToolkitDesktopWindowList *</type>
+          <type><ref refid="MaaToolkitDef_8h_1aaf164274a2c0089edb67f33e26719ff0" kindref="member">MaaToolkitDesktopWindowList</ref> *</type>
           <declname>buffer</declname>
         </param>
         <briefdescription>
@@ -99,7 +99,7 @@
         <argsstring>(const MaaToolkitDesktopWindowList *list)</argsstring>
         <name>MaaToolkitDesktopWindowListSize</name>
         <param>
-          <type>const MaaToolkitDesktopWindowList *</type>
+          <type>const <ref refid="MaaToolkitDef_8h_1aaf164274a2c0089edb67f33e26719ff0" kindref="member">MaaToolkitDesktopWindowList</ref> *</type>
           <declname>list</declname>
         </param>
         <briefdescription>
@@ -111,12 +111,12 @@
         <location file="include/MaaToolkit/DesktopWindow/MaaToolkitDesktopWindow.h" line="17" column="29" declfile="include/MaaToolkit/DesktopWindow/MaaToolkitDesktopWindow.h" declline="17" declcolumn="29"/>
       </memberdef>
       <memberdef kind="function" id="MaaToolkitDesktopWindow_8h_1ade2c61c9f119e803d83ec40307e938d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref> const MaaToolkitDesktopWindow *</type>
+        <type><ref refid="MaaPort_8h_1a011c7bbd355fdfe6aa7599af52cc20ac" kindref="member">MAA_TOOLKIT_API</ref> const <ref refid="MaaToolkitDef_8h_1a5d8743988770806277c247ba9e84040a" kindref="member">MaaToolkitDesktopWindow</ref> *</type>
         <definition>MAA_TOOLKIT_API const MaaToolkitDesktopWindow * MaaToolkitDesktopWindowListAt</definition>
         <argsstring>(const MaaToolkitDesktopWindowList *list, MaaSize index)</argsstring>
         <name>MaaToolkitDesktopWindowListAt</name>
         <param>
-          <type>const MaaToolkitDesktopWindowList *</type>
+          <type>const <ref refid="MaaToolkitDef_8h_1aaf164274a2c0089edb67f33e26719ff0" kindref="member">MaaToolkitDesktopWindowList</ref> *</type>
           <declname>list</declname>
         </param>
         <param>
@@ -137,7 +137,7 @@
         <argsstring>(const MaaToolkitDesktopWindow *window)</argsstring>
         <name>MaaToolkitDesktopWindowGetHandle</name>
         <param>
-          <type>const MaaToolkitDesktopWindow *</type>
+          <type>const <ref refid="MaaToolkitDef_8h_1a5d8743988770806277c247ba9e84040a" kindref="member">MaaToolkitDesktopWindow</ref> *</type>
           <declname>window</declname>
         </param>
         <briefdescription>
@@ -154,7 +154,7 @@
         <argsstring>(const MaaToolkitDesktopWindow *window)</argsstring>
         <name>MaaToolkitDesktopWindowGetClassName</name>
         <param>
-          <type>const MaaToolkitDesktopWindow *</type>
+          <type>const <ref refid="MaaToolkitDef_8h_1a5d8743988770806277c247ba9e84040a" kindref="member">MaaToolkitDesktopWindow</ref> *</type>
           <declname>window</declname>
         </param>
         <briefdescription>
@@ -171,7 +171,7 @@
         <argsstring>(const MaaToolkitDesktopWindow *window)</argsstring>
         <name>MaaToolkitDesktopWindowGetWindowName</name>
         <param>
-          <type>const MaaToolkitDesktopWindow *</type>
+          <type>const <ref refid="MaaToolkitDef_8h_1a5d8743988770806277c247ba9e84040a" kindref="member">MaaToolkitDesktopWindow</ref> *</type>
           <declname>window</declname>
         </param>
         <briefdescription>
