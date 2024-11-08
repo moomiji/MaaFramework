@@ -53,6 +53,7 @@ var MaaDef_8h =
     [ "MaaOptionValueSize", "MaaDef_8h.html#a56ff604006917171af8e4b4974db28ef", null ],
     [ "MaaGlobalOption", "MaaDef_8h.html#a78a454cf5bf3e18aab3aef29cfc7b91c", null ],
     [ "MaaResOption", "MaaDef_8h.html#a96a661c5a0739f3238d192949635b7f7", null ],
+    [ "MaaInferenceDevice", "MaaDef_8h.html#a76a304a8a9693667c34e81f9158be04c", null ],
     [ "MaaCtrlOption", "MaaDef_8h.html#af8335ffd5a7df65830402c82a396c94e", null ],
     [ "MaaTaskerOption", "MaaDef_8h.html#ade3bcba89b5092219c2af3b0faffa934", null ],
     [ "MaaAdbScreencapMethod", "MaaDef_8h.html#a337e4b247a734f5c1c058689f75c1369", null ],
@@ -61,14 +62,14 @@ var MaaDef_8h =
     [ "MaaWin32InputMethod", "MaaDef_8h.html#a29af4457ff72b57b157a1d58d6d28878", null ],
     [ "MaaDbgControllerType", "MaaDef_8h.html#a7a7491d55c50840ccb1891ba9b7740c4", null ],
     [ "MaaRect", "MaaDef_8h.html#a90ae9b4896224481bd0967903dafdfa1", null ],
-    [ "MaaNotificationCallback", "MaaDef_8h.html#aa8191105b665bc8c02f0a78cebac71cd", null ],
-    [ "MaaCustomRecognizerCallback", "MaaDef_8h.html#a7353ae543eb1357324143a8f8d46c242", null ],
-    [ "MaaCustomActionCallback", "MaaDef_8h.html#a900bb36dca59433a1b7cb8dedcee643b", null ],
+    [ "MaaNotificationCallback", "MaaDef_8h.html#a83fe073ae3fefc09c17fd9eb6b6b3e50", null ],
+    [ "MaaCustomRecognitionCallback", "MaaDef_8h.html#a4c72d5184d2333b6deaabd76f2e4db13", null ],
+    [ "MaaCustomActionCallback", "MaaDef_8h.html#a585ec65a9f845b2922eda1d2fffa36b7", null ],
     [ "MaaStatusEnum", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6", [
       [ "MaaStatus_Invalid", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6a062c9b1508f38dba096aa2587ba08d40", null ],
       [ "MaaStatus_Pending", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6ad675ca7fe058998743ec8d99c72a914e", null ],
       [ "MaaStatus_Running", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6a05c689d4235e1214eab9abaf7cd6809b", null ],
-      [ "MaaStatus_Success", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6a26dc49974c883868a557aa9d7a5d23ee", null ],
+      [ "MaaStatus_Succeeded", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6a48d0596abd16c119daeb236a735515d8", null ],
       [ "MaaStatus_Failed", "MaaDef_8h.html#a92a321c9e89a79ab64dc5176057d76a6a341c204f14050eb7dc068032ee9eaf63", null ]
     ] ],
     [ "MaaLoggingLevelEnum", "MaaDef_8h.html#a81060ab7b5fa44bfe6861f3882dec9a9", [
@@ -88,15 +89,23 @@ var MaaDef_8h =
       [ "MaaGlobalOption_Recording", "MaaDef_8h.html#ad09e62ec1fd03dadaf5fb009026c38eeaf316c8e11fd054dfe965b904e3ce93b4", null ],
       [ "MaaGlobalOption_StdoutLevel", "MaaDef_8h.html#ad09e62ec1fd03dadaf5fb009026c38eea58ba5999f483b497af3eac6d327d53e6", null ],
       [ "MaaGlobalOption_ShowHitDraw", "MaaDef_8h.html#ad09e62ec1fd03dadaf5fb009026c38eea1a175dc6811ec0aedb23b87b98d68b40", null ],
-      [ "MaaGlobalOption_DebugMessage", "MaaDef_8h.html#ad09e62ec1fd03dadaf5fb009026c38eeabaaef37576e263fdd0c1148de4d338dc", null ]
+      [ "MaaGlobalOption_DebugMode", "MaaDef_8h.html#ad09e62ec1fd03dadaf5fb009026c38eea85acfc5fc6cdca745d0eb2a090c05c5f", null ]
+    ] ],
+    [ "MaaInferenceDeviceEnum", "MaaDef_8h.html#a70d2d23982bb9114d93ce5e811288679", [
+      [ "MaaInferenceDevice_CPU", "MaaDef_8h.html#a70d2d23982bb9114d93ce5e811288679ae4eb278e6b02b9b25afa7261d0b5c70e", null ],
+      [ "MaaInferenceDevice_Auto", "MaaDef_8h.html#a70d2d23982bb9114d93ce5e811288679a335e0821f21a444ed2bbb45f61df4e1b", null ],
+      [ "MaaInferenceDevice_GPU0", "MaaDef_8h.html#a70d2d23982bb9114d93ce5e811288679a88852ec0a69ab15f9366e82befbbfaa7", null ],
+      [ "MaaInferenceDevice_GPU1", "MaaDef_8h.html#a70d2d23982bb9114d93ce5e811288679a6417a9ae86c81cfa6d2da6f7903a8e1f", null ]
     ] ],
     [ "MaaResOptionEnum", "MaaDef_8h.html#a9aa211dbcabe90cacd0c94ea6a03d116", [
-      [ "MaaResOption_Invalid", "MaaDef_8h.html#a9aa211dbcabe90cacd0c94ea6a03d116afdc31dbaaa6b035f11b40cd574165f8e", null ]
+      [ "MaaResOption_Invalid", "MaaDef_8h.html#a9aa211dbcabe90cacd0c94ea6a03d116afdc31dbaaa6b035f11b40cd574165f8e", null ],
+      [ "MaaResOption_InferenceDevice", "MaaDef_8h.html#a9aa211dbcabe90cacd0c94ea6a03d116a3ff6bf91b8715ced2a6c20ac9c1b4109", null ]
     ] ],
     [ "MaaCtrlOptionEnum", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003", [
       [ "MaaCtrlOption_Invalid", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a4afeb097dfa70801c8fa43d83bb5c51f", null ],
       [ "MaaCtrlOption_ScreenshotTargetLongSide", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a83157be6a22a5e62d4929c7bcd095f75", null ],
       [ "MaaCtrlOption_ScreenshotTargetShortSide", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a8184b8456cf2148033e494be5d8220d3", null ],
+      [ "MaaCtrlOption_ScreenshotUseRawSize", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003a3fd0252e4db060bc453d7b8902260105", null ],
       [ "MaaCtrlOption_Recording", "MaaDef_8h.html#ac9daa36008267a26662244d2f5570003afa8741fa6ccca208c0f65c0b8880832a", null ]
     ] ],
     [ "MaaTaskerOptionEnum", "MaaDef_8h.html#a7ce6a82a2484734da58c3c422d19a9b1", [
