@@ -234,13 +234,11 @@ jobs:
 
             - name: Install dep
               run: |
-                  brew tap-new $USER/local-cmake
-                  brew extract --version=19 llvm $USER/local-cmake
                   brew install ninja ccache
 
             - name: Install compiler
               run: |
-                  brew install llvm@19
+                  brew install llvm
 
             - name: Setup ccache
               uses: Chocobo1/setup-ccache-action@v1
