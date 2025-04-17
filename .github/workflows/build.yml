@@ -236,8 +236,7 @@ jobs:
               run: |
                   brew tap-new $USER/local-cmake
                   brew extract --version=19 llvm $USER/local-cmake
-                  brew extract --version=3 cmake $USER/local-cmake
-                  brew install cmake@3 ninja ccache
+                  brew install ninja ccache
 
             - name: Install compiler
               run: |
