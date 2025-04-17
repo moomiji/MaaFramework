@@ -234,11 +234,12 @@ jobs:
 
             - name: Install dep
               run: |
+                  brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/b4e46db74e74a8c1650b38b1da222284ce1ec5ce/Formula/c/cmake.rb
                   brew install cmake@3.31 ninja ccache
 
             - name: Install compiler
               run: |
-                  brew install llvm@19
+                  brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/02f4d2d7674891c6fc2ca70db04af67fdf8b9e66/Formula/l/llvm.rb
 
             - name: Setup ccache
               uses: Chocobo1/setup-ccache-action@v1
