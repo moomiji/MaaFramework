@@ -235,8 +235,8 @@ jobs:
             - name: Install dep
               run: |
                   brew tap-new $USER/local-cmake
-                  brew extract --version=3.31.6 cmake $USER/local-cmake
                   brew extract --version=19.1.7_1 llvm $USER/local-cmake
+                  brew extract --version=3.31.6 cmake $USER/local-cmake
                   brew install cmake@3.31.6 ninja ccache
 
             - name: Install compiler
